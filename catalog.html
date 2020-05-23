@@ -56,31 +56,120 @@
     </header>
 
     <main>
-      <ul>
-        <li><a href="">Каталог</a></li>
-        <li><a href="">Инструмент</a></li>
-        <li><a href="">Перфораторы</a></li>
-      </ul>
-
-      <h1>Перфораторы</h1>
-
       <section>
-        <h2>Производители:</h2>
         <ul>
-          <li>BOSCH</li>
-          <li>ИНТЕРСКОЛ</li>
-          <li>MAKIta</li>
-          <li>Dewalt</li>
-          <li>Hitachi</li>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Инструмент</a></li>
+          <li><a href="">Перфораторы</a></li>
         </ul>
 
-        <h2>Питание:</h2>
+        <h1>Перфораторы:</h1>
+        <h2>СОРТИРОВКА:</h2>
         <ul>
-          <li>Аккумуляторные</li>
-          <li>Сетевые</li>
+          <li>
+            <a href="">ПО ЦЕНЕ</a>
+          </li>
+          <li>
+            <a href="">ПО ТИПУ</a>
+          </li>
+          <li>
+            <a href="">ПО ФУНКЦИОНАЛУ</a>
+          </li>
+          <li>
+            <button type="button">↑</button>
+          </li>
+          <li>
+            <button type="button">↓</button>
+          </li>
         </ul>
 
-        <button type="submit">Показать</button>
+        <h2>фильтр</h2>
+        <form action="https:echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>ЦЕНА:</legend>
+            <input
+              type="range"
+              name="price"
+              id="price"
+              min="0"
+              max="60000"
+              step="100"
+              value="250000"
+            />
+            <output id="ong" for="price">250000</output>
+          </fieldset>
+
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="BOSCH" id="filter-BOSCH" checked />
+                <label for="filter-BOSCH">BOSCH</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="ИНТЕРСКОЛ"
+                  id="filter-ИНТЕРСКОЛ"
+                  checked
+                />
+                <label for="filter-ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="MAKIta"
+                  id="filter-MAKIta"
+                  checked
+                />
+                <label for="filter-MAKIta">MAKIta</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="Dewalt"
+                  id="filter-Dewalt"
+                  checked
+                />
+                <label for="filter-Dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="Hitachi"
+                  id="filter-Hitachi"
+                  checked
+                />
+                <label for="filter-Hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>ПИТАНИЕ:</legend>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="supply"
+                  value="battery"
+                  id="filter-battery"
+                />
+                <label for="filter-battery">Аккумуляторные</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="supply"
+                  value="network"
+                  id="filter-network"
+                />
+                <label for="filter-battery">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
 
         <ul>
           <li>
@@ -259,6 +348,33 @@
             </div>
           </li>
         </ul>
+        <ul>
+          <li>
+            <a href="">1</a>
+          </li>
+          <li>
+            <a href="">2</a>
+          </li>
+          <li>
+            <a href="">3</a>
+          </li>
+          <li>
+            <a href="">СЛЕДУЮЩАЯ</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h1>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h1>
+        <p>
+          Перфоратор — универсальный строительный инструмент. Предназначен для
+          сверления и долбления отверстий в кирпиче, бетоне и камне. <br />
+          Существуют электромеханические и пневматические перфораторы.
+          Современные модели могут выполнять функции дрели, шуруповерта и
+          отбойного молотка. <br />
+          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве
+          будут совмещены отбойный молоток и ударная дрель.
+        </p>
       </section>
     </main>
 
