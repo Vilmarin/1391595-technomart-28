@@ -96,24 +96,29 @@
               step="100"
               value="250000"
             />
-            <input type="text" name="input_price" id="min_price" />
-            <input type="text" name="input_price" id="max_price" />
+            <input type="text" name="input_price_min" id="min_price" />
+            <input type="text" name="input_price_max" id="max_price" />
           </fieldset>
 
           <fieldset>
             <legend>Производители:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="BOSCH" id="filter-BOSCH" />
-                <label for="filter-BOSCH">BOSCH</label>
+                <input type="checkbox" name="bosch" id="filter-bosch" checked />
+                <label for="filter-bosch">BOSCH</label>
               </li>
               <li>
                 <input type="checkbox" name="interskol" id="filter-interskol" />
                 <label for="filter-interskol">ИНТЕРСКОЛ</label>
               </li>
               <li>
-                <input type="checkbox" name="MAKIta" id="filter-MAKIta" />
-                <label for="filter-MAKIta">MAKIta</label>
+                <input
+                  type="checkbox"
+                  name="makita"
+                  id="filter-makita"
+                  checked
+                />
+                <label for="filter-makita">MAKIta</label>
               </li>
               <li>
                 <input type="checkbox" name="Dewalt" id="filter-Dewalt" />
@@ -135,6 +140,7 @@
                   name="supply"
                   value="battery"
                   id="filter-battery"
+                  checked
                 />
                 <label for="filter-battery">Аккумуляторные</label>
               </li>
