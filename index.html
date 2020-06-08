@@ -11,17 +11,18 @@
   <header>
     <div>
       <a href="index.html">
-        <img src="img/logo.svg" width="220" height="47" alt="Логотип магазина Техномарт" />
+        <img src="img/logo.svg" width="220" height="47" alt="Магазин Техномарт."/>
       </a>
 
       <form action="https://echo.htmlacademy.ru" method="get">
         <button type="submit">
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewbox="0 0 17 17">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewbox="0 0 17 17" aria-labelledby="search_title">
+            <title id="search_title">Поиск по сайту.</title>
             <path fill="#ffffff"
               d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
           </svg>
         </button>
-        <label for="search_field" class="visually-hidden">Поиск</label>
+        <label for="search_field" class="visually-hidden">Поиск по сайту</label>
         <input type="search" name="search_field" id="search_field" placeholder="Поиск:" />
       </form>
 
@@ -42,10 +43,11 @@
         строительных материалов <br />
         и инструментов для ремонта
       </p>
-      <a href="tel:+78125550555">7(812)555-05-55 </a>
+      <a href="tel:+78125550555" aria-label="позвонить нам по номеру 78125550555"> 7(812)555-05-55 </a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <a href="">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewbox="0 0 20 17">
+          <title>Войти в личный кабинет</title>
           <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z" />
           <path fill="#c5c5c5"
             d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
@@ -171,7 +173,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg2000.png" alt="Перфоратор BOSCH  bfg 2000" width="144" height="128" />
+            <img src="img/catalog/bfg2000.png" alt="Перфоратор BOSCH bfg 2000" width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 2000
@@ -291,11 +293,13 @@
       </p>
 
       <a href="https://goo.gl/maps/UqTpzaQLbmj5em4t7"><img src="img/map.jpg" width="300" height="150"
-          alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" /></a>
+          alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8." /></a>
 
       <div class="visually-hidden">
-        <button type="button">x</button>
-        <img src="img/map_popup.jpg" alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <button type="button">
+          <img src="img/svg/icon-close.svg" alt="Закрыть карту" width="21" height="21">
+        </button>
+        <img src="img/map_popup.jpg" alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8.">
       </div>
 
 
@@ -304,21 +308,21 @@
       <form action="https://echo.htmlacademy.ru">
         <div>
           <label for="user_name">Ваше имя:</label>
-          <br>
+
           <input type="text" name="name_field" id="user_name" placeholder="Имя Фамилия">
         </div>
 
         <div>
           <label for="user_email">Ваш e-mail:</label>
-          <br>
+
           <input type="email" name="email_field" id="user_email" placeholder="email@example.com">
         </div>
-        <br>
+
         <label for="">Текст письма:</label>
-        <br>
+
         <textarea cols="40" row="10" placeholder="В свободной форме">
         </textarea>
-        <br>
+
         <button type="submit">Отправить</button>
       </form>
 
@@ -329,10 +333,10 @@
     <div>
       <div>
         <a href="index.html">
-          <img src="img/logo.svg" width="220" height="47" alt="Логотип магазина Техномарт" />
+          <img src="img/logo.svg" width="220" height="47" alt="магазин Техномарт" />
         </a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a href="tel:+78125550555" aria-label="позвонить нам по номеру 78125550555">+7 (812) 555-05-55</a>
       </div>
 
       <div>
