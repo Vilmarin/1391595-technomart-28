@@ -14,15 +14,13 @@
       </a>
 
       <form action="https://echo.htmlacademy.ru" method="get">
-        <button type="submit">
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewbox="0 0 17 17"
-            aria-labelledby="search_title">
-            <title id="search_title">изображение лупы.</title>
-            <path fill="#ffffff"
+        <button type="submit" aria-label="кнопка поиска">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewbox="0 0 17 17">
+              <path fill="#ffffff"
               d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
           </svg>
         </button>
-        <label for="search_field" class="visually-hidden">Поиск по сайту</label>
+        <label for="search_field" class="visually-hidden">поле ввода для поиска по сайту.</label>
         <input type="search" name="search_field" id="search_field" placeholder="Поиск:" />
       </form>
 
@@ -44,7 +42,7 @@
         и инструментов для ремонта
       </p>
 
-      <a href="tel:+78125550555" aria-label="позвонить нам по номеру 78125550555">7(812)555-05-55 </a>
+      <a href="tel:+78125550555" aria-label="позвонить нам по номеру 78125550555.">7(812)555-05-55 </a>
 
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
@@ -55,7 +53,7 @@
             d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" />
         </svg>
         Равшан Джамшутович</a>
-      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewbox="0 0 21 17">
+      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewbox="0 0 21 17" aria-label="выйти из личного кабинета.">
           <g fill="#c5c5c5">
             <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z" />
             <path fill="#c5c5c5"
@@ -69,8 +67,8 @@
 
     <nav>
       <ul>
-        <li><a href="">Главная</a></li>
-        <li><a href="">Компания</a></li>
+        <li><a href="" aria-label="перейти на главную страницу.">Главная</a></li>
+        <li><a href="" aria-label="информация о компании.">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="">Новости</a></li>
         <li><a href="">Спецпредложения</a></li>
@@ -82,37 +80,39 @@
 
   <main>
     <section>
-      <ul >
+      <nav aria-label="навигация по каталогу.">
+      <ul>
         <li>
-          <a href="index.html"></a>
+          <a href="index.html" aria-label="вернуться на главную страницу."></a>
         </li>
         <li><a href="">Каталог</a></li>
         <li><a href="">Инструмент</a></li>
         <li><a href="">Перфораторы</a></li>
       </ul>
+    </nav>
 
       <h1>Перфораторы:</h1>
       <h2>СОРТИРОВКА:</h2>
       <ul>
         <li>
-          <a href="">ПО ЦЕНЕ</a>
+          <a href="" aria-label="сортировка по цене." >ПО ЦЕНЕ</a>
         </li>
         <li>
-          <a href="">ПО ТИПУ</a>
+          <a href="" aria-label="сортировка по типу." >ПО ТИПУ</a>
         </li>
         <li>
-          <a href="">ПО ФУНКЦИОНАЛУ</a>
+          <a href="" aria-label="сортировка по функционалу." >ПО ФУНКЦИОНАЛУ</a>
         </li>
         <li>
           <button type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
+            <svg aria-label="отсортировать по возрастанию." xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
               <path fill="#231F20" d="M5.5 10L0 0h11" />
             </svg>
           </button>
         </li>
         <li>
           <button type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
+            <svg aria-label="отсортировать по убыванию." xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
               <path fill="#231F20" d="M5.5 10L0 0h11" />
             </svg>
           </button>
@@ -177,7 +177,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000" width="144" height="128" />
+            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000." width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 6000
@@ -196,7 +196,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000" width="144" height="128" />
+            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000." width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 6000
@@ -215,7 +215,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000" width="144" height="128" />
+            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000." width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 6000
@@ -234,7 +234,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg3000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 3000" width="127" height="112" />
+            <img src="img/catalog/bfg3000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 3000." width="127" height="112" />
             <p>
               Перфоратор BOSCH <br />
               bfg 3000
@@ -253,7 +253,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000" width="144" height="128" />
+            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000." width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 6000
@@ -272,7 +272,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg2000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 2000" width="144" height="128" />
+            <img src="img/catalog/bfg2000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 2000." width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 2000
@@ -290,7 +290,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg3000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 3000" width="127" height="112" />
+            <img src="img/catalog/bfg3000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 3000." width="127" height="112" />
             <p>
               Перфоратор BOSCH <br />
               bfg 3000
@@ -309,7 +309,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000" width="144" height="128" />
+            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000." width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 6000
@@ -328,7 +328,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg2000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 2000" width="144" height="128" />
+            <img src="img/catalog/bfg2000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 2000." width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 2000
@@ -355,14 +355,14 @@
           <a href="">3</a>
         </li>
         <li>
-          <a href="">СЛЕДУЮЩАЯ</a>
+          <a href="" aria-label="перейти на следующую страницу каталога">СЛЕДУЮЩАЯ</a>
         </li>
       </ul>
 
       <div class="visually-hidden">
-        <button type="button" aria-label="закрыть карту.">х</button>
+        <button type="button" aria-label="закрыть форму заказа.">х</button>
         <div>
-          <img src="img/svg/icon-mark.svg" alt="Товар добавлен в корзину">
+          <img src="img/svg/icon-mark.svg" alt="Товар добавлен в корзину.">
           <p>Товар добавлен в корзину!</p>
         </div>
         <div>
@@ -390,16 +390,16 @@
     <div>
       <div>
         <a href="index.html">
-          <img src="img/logo.svg" width="220" height="47" alt="Логотип магазина Техномарт" />
+          <img src="img/logo.svg" width="220" height="47" alt="магазин техномарт."/>
         </a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a href="tel:+78125550555" aria-label="позвонить нам по номеру 78125550555.">+7 (812) 555-05-55</a>
       </div>
 
       <div>
         <ul>
-          <li><a href="">Компания</a></li>
-          <li><a href="">Новости</a></li>
+          <li><a href="" aria-label="перейти на главную страницу.">Главная</a></li>
+          <li><a href="" aria-label="информация о компании.">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="">Доставка</a></li>
           <li><a href="">Контакты</a></li>
@@ -434,12 +434,12 @@
       <div>
         <p>
           Обратная связь:<br />
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru" aria-label="написать письмо нам на почту.">mail@htmlacademy.ru</a>
         </p>
 
         <p>
           Разработано - <br />
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="перейти на сайт разработчиков.">
             htmlacademy.ru
           </a>
         </p>
