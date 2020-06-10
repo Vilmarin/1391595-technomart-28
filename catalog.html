@@ -17,7 +17,7 @@
         <button type="submit">
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewbox="0 0 17 17"
             aria-labelledby="search_title">
-            <title id="search_title">Поиск по сайту.</title>
+            <title id="search_title">изображение лупы.</title>
             <path fill="#ffffff"
               d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
           </svg>
@@ -82,7 +82,7 @@
 
   <main>
     <section>
-      <ul>
+      <ul >
         <li>
           <a href="index.html"></a>
         </li>
@@ -123,8 +123,11 @@
       <form action="https://echo.htmlacademy.ru" method="POST">
         <fieldset>
           <legend>ЦЕНА:</legend>
+          <label for="price" class="visually-hidden">Ползунок цены</label>
           <input type="range" name="price" id="price" min="0" max="60000" step="100" value="250000" />
+          <label for="min_price" class="visually-hidden">минимальная цена</label>
           <input type="text" name="input_price_min" id="min_price" />
+          <label for="max_price" class="visually-hidden">максимальная цена</label>
           <input type="text" name="input_price_max" id="max_price" />
         </fieldset>
 
@@ -174,7 +177,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg6000.png" alt="Перфоратор BOSCH  bfg 6000" width="144" height="128" />
+            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000" width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 6000
@@ -193,7 +196,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg6000.png" alt="Перфоратор BOSCH  bfg 6000" width="144" height="128" />
+            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000" width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 6000
@@ -212,7 +215,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg6000.png" alt="Перфоратор BOSCH  bfg 6000" width="144" height="128" />
+            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000" width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 6000
@@ -231,7 +234,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg3000.png" alt="Перфоратор BOSCH  bfg 3000" width="127" height="112" />
+            <img src="img/catalog/bfg3000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 3000" width="127" height="112" />
             <p>
               Перфоратор BOSCH <br />
               bfg 3000
@@ -250,7 +253,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg6000.png" alt="Перфоратор BOSCH  bfg 6000" width="144" height="128" />
+            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000" width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 6000
@@ -269,7 +272,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg2000.png" alt="Перфоратор BOSCH  bfg 2000" width="144" height="128" />
+            <img src="img/catalog/bfg2000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 2000" width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 2000
@@ -287,7 +290,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg3000.png" alt="Перфоратор BOSCH  bfg 3000" width="127" height="112" />
+            <img src="img/catalog/bfg3000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 3000" width="127" height="112" />
             <p>
               Перфоратор BOSCH <br />
               bfg 3000
@@ -306,7 +309,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg6000.png" alt="Перфоратор BOSCH  bfg 6000" width="144" height="128" />
+            <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000" width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 6000
@@ -325,7 +328,7 @@
         <li>
           <div>
             <p>new</p>
-            <img src="img/catalog/bfg2000.png" alt="Перфоратор BOSCH  bfg 2000" width="144" height="128" />
+            <img src="img/catalog/bfg2000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 2000" width="144" height="128" />
             <p>
               Перфоратор BOSCH <br />
               bfg 2000
@@ -357,9 +360,7 @@
       </ul>
 
       <div class="visually-hidden">
-        <button type="button">
-          <img src="img/svg/icon-close.svg" alt="Закрыть карту" width="21" height="21">
-        </button>
+        <button type="button" aria-label="закрыть карту.">х</button>
         <div>
           <img src="img/svg/icon-mark.svg" alt="Товар добавлен в корзину">
           <p>Товар добавлен в корзину!</p>
