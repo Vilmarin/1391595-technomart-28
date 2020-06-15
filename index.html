@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <title>ТЕХНОМАРТ</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
   <header>
-    <div>
-      <a href="index.html">
+    <div class="header_title">
+      <a href="index.html" class="logo">
         <img src="img/logo.svg" width="220" height="47" alt="Магазин Техномарт." />
       </a>
 
@@ -32,19 +33,19 @@
         <li>
           <a href="#">Корзина: 10</a>
         </li>
-        <li><a href="#">Оформить заказ</a></li>
+        <li><a href="#" class="checkout" >Оформить заказ</a></li>
       </ul>
     </div>
 
-    <div>
-      <p>
+    <div class="header_inner">
+      <p class="header_inner_description" >
         Интернет-магазин <br />
         строительных материалов <br />
         и инструментов для ремонта
       </p>
-      <a href="tel:+78125550555" aria-label="позвонить нам по номеру +78125550555."> 7(812)555-05-55 </a>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <a href="" aria-label="войти в личный кабинет.">
+      <a href="tel:+78125550555" aria-label="позвонить нам по номеру +78125550555." class="header_inner_phone"> +7(812)555-05-55 </a>
+      <p class="header_inner_address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <a href="" aria-label="войти в личный кабинет." class="login">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewbox="0 0 20 17"
           aria-hidden="true">
           <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z" />
@@ -52,10 +53,10 @@
             d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
         </svg>
         Войти</a>
-      <a href="" aria-label="регистрация в личном кабинете.">Регистрация</a>
+      <a href="" aria-label="регистрация в личном кабинете." class="registration">Регистрация</a>
     </div>
 
-    <nav>
+    <nav class="main_nav">
       <ul>
         <li><a href="" aria-label="перейти на главную страницу.">Главная</a></li>
         <li><a href="" aria-label="информация о компании.">Компания</a></li>

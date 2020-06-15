@@ -1,9 +1,142 @@
-body {}
+:root{
+  --desaturated-blue:#293449 ;
+  --grayish-white: #f2f6f8;
+  --classic-white: #FFFFFF;
+  --classic-red: #EE3643;
+  --green:#63A63E;
+  --classic-black:#000000;
+}
 
-.phone {
-  display: block;
-  background-image: url("../img/svg/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: transparent;
+body {
+margin: 0 ;
+min-width: 1220px;
+padding: 0;
+font-family: PT Sans;
+font-size: 14px;
+background-color: var(--classic-white);
+}
+img {
+   max-width: 100% ;
+  height: auto;
+  }
+a {
+  text-decoration: none;
+}
+
+.feedback { color: black }
+.feedback ul { list-style: none }
+.feedback p { margin-bottom: 0 }
+
+*, *::before, *::after { box-sizing: border-box; }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/*  header_title  */
+.header_title {
+  background-color: var(--desaturated-blue);
+  font-size: 18px;
+  margin: 0px;
+}
+
+.header_title ul{
+  margin: 0px;
+}
+.logo {
+  background: black;
+    opacity: 1;
+}
+.logo img:active {
+  opacity: 0.8;
+  margin-bottom: 0px;
+}
+
+.header_title a {
+  color: var(--classic-white);
+}
+
+.header_title li {
+  list-style: none;
+}
+
+.checkout {
+background-color:var(--green) ;
+padding-left: 20px;
+padding-right: 18px;
+padding-top: 18px;
+padding-bottom: 11px;
+margin-left: 28px;
+}
+
+/*header_inner*/
+
+.header_inner {
+  margin: 0px;
+  font-family: Cuprum;
+  background-color: var(--grayish-white);
+}
+
+.header_inner_description {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--classic-red);
+  margin: 0px;
+}
+
+.header_inner_phone {
+font-weight: bold;
+font-size: 21px;
+line-height: 30px;
+border: 3px solid;
+border-color: var(--classic-white);
+color: var(--classic-red);
+}
+
+.header_inner_address {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--desaturated-blue);
+}
+
+.login {
+background-color: var(--classic-white);
+font-size: 21px;
+color: var(--classic-black);
+padding-top: 12px;
+padding-bottom: 12px;
+padding-left: 45px;
+padding-right: 27px;
+}
+
+.registration {
+background-color: var(--classic-white);
+font-size: 21px;
+color: var(--classic-black);
+padding-top: 12px;
+padding-bottom: 12px;
+padding-left: 24px;
+padding-right: 24px;
+}
+
+.main_nav {
+  background-color: var(--desaturated-blue);
+  margin-bottom: 60px;
+}
+
+.main_nav a {
+color: var(--classic-white);
+}
+
+.main_nav li {
+  list-style: none;
+}
+
+.main_nav ul {
+  margin: 0px;
 }
