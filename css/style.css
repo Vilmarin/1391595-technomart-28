@@ -1,20 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --desaturated-blue: #293449;
+  --dark-blue: #161D29;
   --grayish-white: #f2f6f8;
   --classic-white: #FFFFFF;
   --classic-red: #EE3643;
+  --dark-red: #BA2732;
   --green: #63A63E;
+  --light-green: #5FBB2D;
+  --dark-greem: #518534;
   --classic-black: #000000;
   --basic-sea: #32425c;
   --basic-sienna: #ffd180;
   --basic-sea-light: #f1f5f7;
+  --basic-white: #F3F7F9;
   --basic-gray: #a9a9a9;
+  --dark-gray: #3D546F;
+  --classic-yellow: #FFBF47;
+  --classic-blue: #3BBCE3;
+  --classic-pink: #DC91D8;
+  --light-green: #8ED78F;
+  --light-gray: #C5C5C5;
+  --light_shade_of_gray:#E5E5E5;
+  --Dark-Steel-Blue: #1D2739;
 }
 
 body {
   min-width: 1220px;
   padding: 0;
-  font-family: "PT Sans", "Tahoma"sans-serif;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
   background-color: var(--classic-white);
   color: var(--classic-black);
@@ -31,11 +50,7 @@ a {
 }
 
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 .visually_hidden {
   position: absolute;
@@ -49,34 +64,101 @@ a {
   display: none;
 }
 
-/*  header_title  */
-.header_title {
+/*  header_line  */
+.header_line {
   background-color: var(--desaturated-blue);
+  margin: 0px;
   font-size: 18px;
+  line-height: 24px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+}
+
+.header_line ul {
   margin: 0px;
 }
 
-.header_title ul {
-  margin: 0px;
-}
-
-.logo {
-  background-color: var(--classic-black);
-  opacity: 1;
-}
-
-.logo img:active {
-  opacity: 0.8;
-  margin-bottom: 0px;
-}
-
-.header_title a {
+.header_line a {
   color: var(--classic-white);
 }
 
-.header_title li {
+.header_line li {
   list-style: none;
 }
+
+.header_bookmarks:active,
+.header_basket:active {
+  background-color: var(--dark-blue);
+  opacity: 0.5;
+}
+
+.logo {
+  display: block;
+  width: 220px;
+  height: 47px;
+  text-align: center;
+  line-height: 52px;
+  background-color: var(--classic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.logo:active {
+  background-color: var(--dark-red);
+}
+
+
+.search_form {
+  position: relative;
+}
+
+.search_btn {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+}
+
+.search_btn:hover .search_icon_path {
+  opacity: 1;
+}
+
+.search_input {
+  padding-left: 25px;
+  background-color: transparent;
+  border-style: none;
+}
+
+.search_input:active,
+.search_input:focus {
+  background-color: var(--classic-white);
+}
+
+.search_input:hover+.search_btn .search_icon_path {
+  fill: var(--classic-white);
+  opacity: 1;
+}
+
+.search_input:active+.search_btn .search_icon_path,
+.search_input:focus+.search_btn .search_icon_path {
+  fill: var(--classic-red);
+  opacity: 1;
+}
+
+
+
+.search_icon_path {
+  opacity: 0.3;
+}
+
+.search_icon:active {
+  fill: var(--classic-red);
+}
+
+::-webkit-input-placeholder {
+  color: var(--classic-white);
+}
+
 
 .place_your_order {
   background-color: var(--green);
@@ -88,11 +170,15 @@ margin-left: 28px;*/
 
 }
 
+.place_your_order:active {
+  opacity: 0.85;
+}
+
 /*header_inner*/
 
 .header_inner {
   margin: 0px;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Tahoma", sans-serif;
   background-color: var(--grayish-white);
 }
 
@@ -115,12 +201,14 @@ margin-left: 28px;*/
 .header_inner_address {
   font-size: 14px;
   line-height: 24px;
-  color: var(--desaturated-blue);
+  color: var(--basic-sea);
 }
 
 .login {
   background-color: var(--classic-white);
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 21px;
+  line-height: 21px;
   color: var(--classic-black);
   /*padding-top: 12px;
 padding-bottom: 12px;
@@ -129,9 +217,29 @@ padding-right: 27px;*/
 
 }
 
+.login:hover .login_icon {
+  fill: var(--basic-gray);
+  /*вот цвет, который взял из фигмы, но на странице он не совпадает с тем, что в макете*/
+}
+
+
+.login:hover,
+.registration:hover {
+  color: var(--classic-red);
+}
+
+.login:active .login_icon,
+.login:active {
+  fill: var(--light-gray);
+  color: var(--light-gray);
+}
+
+
 .registration {
   background-color: var(--classic-white);
   font-size: 21px;
+  line-height: 21px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   color: var(--classic-black);
   /*padding-top: 12px;
 padding-bottom: 12px;
@@ -140,8 +248,35 @@ padding-right: 24px;*/
 
 }
 
+.registration:active {
+  color: var(--light-gray);
+}
+
+.user_field {
+  position: relative;
+}
+
+.user_login {
+  background-color: var(--classic-white);
+  font-size: 21px;
+  color: var(--classic-black);
+  position: relative;
+}
+
+.log_out {
+  background-color: var(--classic-white);
+}
+
+.log_out:hover path {
+  fill: var(--dark-gray);
+}
+
+.user_login:hover .user_icon {
+  fill: var(--dark-gray);
+}
+
 .main_nav {
-  background-color: var(--desaturated-blue);
+  background-color: var(--basic-sea);
   /*margin-bottom: 60px;*/
 }
 
@@ -153,30 +288,82 @@ padding-right: 24px;*/
   list-style: none;
 }
 
+.main_nav a:hover {
+  background-color: var(--desaturated-blue);
+}
+
+.main_nav a:active {
+  opacity: 0.5;
+  background-color: var(--Dark-Steel-Blue);
+}
+
 .main_nav ul {
   margin: 0px;
 }
 
-.login_sub_title {
+
+
+.login_sub_title,
+.users_orders {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-sea);
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Tahoma", sans-serif;
 }
+
+.login_sub_title:hover,
+.users_orders:hover {
+  color: var(--classic-red);
+}
+
+.login_sub_title::before {
+  content: "";
+  background-color: var(--basic-sea);
+  clip-path: circle(50%);
+  height: 4px;
+  width: 4px;
+  display: block;
+}
+
+.login_sub_title:hover::before {
+  background-color: var(--classic-red);
+}
+
+.login_sub_title:active::before {
+  background-color: var(--light-gray);
+}
+
+.users_orders:active,
+.login_sub_title:active,
+.user_login:active .user_icon,
+.log_out:active path,
+.user_login:active {
+  color: var(--light-gray);
+  fill: var(--light-gray);
+}
+
 
 .catalog_nav a {
   font-size: 13px;
   line-height: 18px;
   color: var(--classic-black);
   text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
+}
+
+.catalog_nav li {
+  list-style: none;
 }
 
 .catalog_title {
+  font-family: "Cuprum", "Tahoma", sans-serif;
   background-color: var(--grayish-white);
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-sea);
+
 }
 
 .catalog_filter fieldset {
@@ -184,6 +371,9 @@ padding-right: 24px;*/
   line-height: 19px;
   text-transform: uppercase;
   color: var(--classic-black);
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
 
 .catalog_filter legend {
@@ -203,7 +393,79 @@ padding-right: 24px;*/
   font-size: 13px;
   line-height: 18px;
   background-color: var(--classic-white);
+  outline: none;
+  border: 1px solid var(--light_shade_of_gray);
+  text-transform: uppercase;
 
+
+}
+
+.catalog_list li {
+  list-style: none;
+}
+
+.merchandise {
+  position: relative;
+}
+
+.new_text {
+  background-color: var(--classic-red);
+  color: var(--classic-white);
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  text-transform: uppercase;
+
+}
+
+.buy_btn {
+  background-color: var(--green);
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border-style: none;
+  color: var(--classic-white);
+  outline: none;
+  /*
+  position: absolute;
+  top: 85px;
+  left: 43px;
+  display: none;
+  */
+}
+
+.buy_btn:hover {
+  background-color: var(--light-green);
+}
+
+.buy_btn:active {
+  background-color: var(--dark-greem);
+}
+
+.bookmarks_btn {
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border: 2px solid var(--green);
+  color: var(--basic-sea);
+  outline: none;
+  background-color: var(--classic-white);
+
+  /*
+  position: absolute;
+  top: 117px;
+  left: 40px;
+  */
+
+}
+
+.bookmarks_btn:hover {
+  border-color: var(--basic-sea);
+}
+
+.bookmarks_btn:active {
+  border-color: var(--basic-sea);
+  opacity: 0.5;
 }
 
 .merchandise_name {
@@ -230,13 +492,50 @@ padding-right: 24px;*/
   background-color: var(--classic-red);
 }
 
+.main_features h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  color: var(--classic-white);
+}
+
+.main_features a {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  text-transform: uppercase;
+}
+
+.materials {
+  background-color: var(--classic-yellow);
+}
+
+
+.tools {
+  background-color: var(--classic-blue);
+}
+
+.machinery {
+  background-color: var(--classic-pink);
+}
+
+.discounts {
+  background-color: var(--light-green);
+}
+
+.delivery {
+  background-color: var(--classic-yellow);
+}
+
+*/
 /*
 .services {
   background-color: var(--grayish-white);
 }
 
 .services h2 {
-  font-family: "Cuprum";
+  font-family: "Cuprum","Tahoma", sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: var(--classic-black);
@@ -271,7 +570,7 @@ padding-right: 24px;*/
   list-style: none;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 /*
@@ -287,7 +586,7 @@ padding-right: 24px;*/
 
 .about h2,
 .contacts h2 {
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -299,19 +598,26 @@ padding-right: 24px;*/
 
 .about p,
 .contacts p {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
 .about a {
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Tahoma", sans-serif;
   text-transform: uppercase;
   color: var(--classic-white);
   font-size: 14px;
   line-height: 18px;
   background-color: var(--classic-red);
+}
 
+.about_company {
+  background-color: var(--classic-red);
+}
+
+.about_company:active {
+  background-color: var(--dark-red);
 }
 
 .lose_button,
@@ -321,25 +627,24 @@ padding-right: 24px;*/
   color: var(--classic-white);
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  border-style: none;
+  outline: none;
+}
+
+.lose_button:active,
+.write_us button:active {
+  background-color: var(--dark-red);
 }
 
 .write_us label {
   font-size: 18px;
   line-height: 24px;
   color: var(--classic-black);
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
-footer {
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Cuprum";
-  color: var(--classic-white);
-}
-
-footer li,
-a {
+footer li {
   list-style: none;
   color: var(--basic-sea-light);
 }
@@ -349,11 +654,55 @@ a {
 
 }
 
-.footer_inner {
-  background-color: var(--desaturated-blue);
+.footer a {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  color: var(--classic-white);
+  font-size: 18px;
+  line-height: 24px;
 }
 
-.yellow_color,
-.yellow_color a {
+.footer_address {
+  color: var(--basic-white);
+}
+
+.footer_inner {
+  background-color: var(--desaturated-blue);
+  color: var(--classic-white);
+}
+
+.footer_menu a {
+  color: var(--basic-sea-light) ;
+}
+
+.footer_menu a:hover {
+  text-decoration: underline var(--basic-sea-light);
+}
+
+.footer_menu_yellow,
+.footer_menu_yellow a,
+.feedback a {
   color: var(--basic-sienna);
+}
+
+
+.footer_menu_yellow a:hover,
+.feedback a:hover {
+  text-decoration: underline var(--basic-sienna);
+}
+
+.feedback a:active {
+  color: var(--classic-red);
+  text-decoration: none;
+}
+
+.footer_menu_yellow a:active,
+.footer_menu a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer_address+a {
+  color: var(--basic-white);
 }
