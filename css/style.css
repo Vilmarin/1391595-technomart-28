@@ -94,7 +94,7 @@ a {
 }
 
 .not_empty_basket {
-background-color: var(--classic-red);
+  background-color: var(--classic-red);
 }
 
 .logo {
@@ -703,8 +703,8 @@ padding-right: 24px;*/
 .footer a {
   font-family: "Cuprum", "Tahoma", sans-serif;
   color: var(--classic-white);
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .footer_address {
