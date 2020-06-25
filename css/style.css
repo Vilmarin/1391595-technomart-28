@@ -728,6 +728,8 @@ padding-right: 24px;*/
 
 .footer_menu a {
   color: var(--basic-sea-light);
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .footer_menu a:hover {
@@ -739,6 +741,11 @@ padding-right: 24px;*/
   line-height: 18px;
   font-family: "Cuprum", "Tahoma", sans-serif;
 
+}
+
+.footer_menu_yellow a {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .footer_menu_yellow,
