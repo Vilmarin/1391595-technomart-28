@@ -24,10 +24,10 @@
   --classic-yellow: #FFBF47;
   --classic-blue: #3BBCE3;
   --classic-pink: #DC91D8;
-  --light-green: #8ED78F;
+  --feijoa: #8ED78F;
   --light-gray: #C5C5C5;
-  --light_shade_of_gray:#E5E5E5;
-  --Dark-Steel-Blue: #1D2739;
+  --light_shade_of_gray: #E5E5E5;
+  --dark-steel-blue: #1D2739;
 }
 
 body {
@@ -294,7 +294,7 @@ padding-right: 24px;*/
 
 .main_nav a:active {
   opacity: 0.5;
-  background-color: var(--Dark-Steel-Blue);
+  background-color: var(--dark-steel-blue);
 }
 
 .main_nav ul {
@@ -507,6 +507,7 @@ padding-right: 24px;*/
   text-transform: uppercase;
 }
 
+/*
 .materials {
   background-color: var(--classic-yellow);
 }
@@ -521,14 +522,13 @@ padding-right: 24px;*/
 }
 
 .discounts {
-  background-color: var(--light-green);
+  background-color: var(--feijoa);
 }
 
 .delivery {
   background-color: var(--classic-yellow);
 }
 
-*/
 /*
 .services {
   background-color: var(--grayish-white);
@@ -655,8 +655,6 @@ footer li {
 }
 
 .footer a {
-  font-size: 16px;
-  line-height: 18px;
   font-family: "Cuprum", "Tahoma", sans-serif;
   color: var(--classic-white);
   font-size: 18px;
@@ -673,7 +671,7 @@ footer li {
 }
 
 .footer_menu a {
-  color: var(--basic-sea-light) ;
+  color: var(--basic-sea-light);
 }
 
 .footer_menu a:hover {
