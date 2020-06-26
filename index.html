@@ -75,30 +75,30 @@
   </header>
 
   <main>
-    <section>
+    <section class="main_features">
       <!--сервисы + слайдер-->
-      <div>
-        <p>new</p>
+      <div class="materials">
+        <p class="new_text">new</p>
         <h3>Материалы</h3>
         <a href="" aria-label="товары на любой вкус.">на любой вкус</a>
         <img src="https://via.placeholder.com/150x100" alt="Материалы." width="44" height="65" />
       </div>
-      <div>
+      <div class="tools">
         <h3>Инструмент</h3>
         <a href="" aria-label="товары на все случаи жизни.">НА ВСЕ СЛУЧАИ</a>
         <img src="https://via.placeholder.com/150x100" alt="Инструмент." width="44" height="65" />
       </div>
-      <div>
+      <div class="machinery">
         <h3>Техника</h3>
         <a href="" aria-label="инструменты для строительства.">для стройки</a>
         <img src="https://via.placeholder.com/150x100" alt="Техника." width="44" height="65" />
       </div>
-      <div>
+      <div class="discounts">
         <h3>Скидки 50%</h3>
         <a href="" aria-label="скидки 50% на 350 товаров.">На 350 ТОВАРОВ</a>
         <img src="https://via.placeholder.com/150x100" alt="Скидки 50% на 350 товаров." width="44" height="65" />
       </div>
-      <div>
+      <div class="delivery">
         <h3>Доставка</h3>
         <a href="" aria-label="оформить бесплатную доставку.">Бесплатно</a>
         <img src="https://via.placeholder.com/150x100" alt="бесплатная доставка." width="44" height="65" />
@@ -108,89 +108,98 @@
         <!--слайдер-->
         <div>
           <img src="img/slider/drill.jpg" alt="Мужчина с дрелью в руках." width="620" height="266" />
-          <a href="/catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+          <a class="lose_button" href="/catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
         </div>
         <div>
           <img src="img/slider/hammer_drill.jpg" alt="Мужчина с перфоратором в руках." width="620" height="266" />
-          <a href="/catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+          <a class="lose_button" href="/catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
         </div>
-        <button type="button" aria-label="пролистать назад слайд.">←</button>
-        <button type="button" aria-label="пролистать вперед слайд.">→</button>
+        <button class="arrow_left" type="button" aria-label="пролистать назад слайд.">←</button>
+        <button class="arrow_right" type="button" aria-label="пролистать вперед слайд.">→</button>
       </div>
     </section>
 
     <section>
       <!--Популярные товары-->
-      <div>
+      <div class="popular">
         <h2>Популярные товары:</h2>
-        <a href="catalog.html">все популярные товары</a>
+        <a class="lose_button" href="catalog.html">все популярные товары</a>
       </div>
 
-      <ul>
+      <ul class="catalog_list">
         <li>
           <div>
-            <p>new</p>
-            <img src="img/catalog/bfg9000.png" alt="Перфоратор BOSCH bfg 9000." width="184" height="164"
-              aria-hidden="true" />
-            <p>
+            <p class="new_text">new</p>
+            <img class="merchandise_img" src="img/catalog/bfg9000.png" alt="Перфоратор BOSCH bfg 9000." width="184"
+              height="164" aria-hidden="true" />
+            <p class="merchandise_name">
               Перфоратор BOSCH <br />
-              bfg 9000
+              BFG 9000
             </p>
-            <p>32500 Р.</p>
-            <p>25500 Р.</p>
+            <p class="merchandise_price">32500 Р.</p>
+            <p class="merchandise_discount">25500 Р.</p>
             <div>
-              <button type="button">КУПИТЬ</button>
-              <button type="button" aria-label="добавить товар в закладки.">В закладки</button>
+              <button class="buy_btn" type="button">КУПИТЬ</button>
+              <button class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
             </div>
           </div>
         </li>
         <li>
           <div>
-            <p>new</p>
-            <img src="img/catalog/bfg3000.png" alt="Перфоратор BOSCH bfg 3000." width="127" height="112"
-              aria-hidden="true" />
-            <p>
+            <p class="new_text">new</p>
+            <img src="img/catalog/bfg3000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 3000." width="127"
+              height="112" />
+            <p class="merchandise_name">
               Перфоратор BOSCH <br />
-              bfg 3000
+              BFG 3000
             </p>
-            <p>22500 Р.</p>
-            <p>15500 Р.</p>
+            <p class="merchandise_price">22500 Р.</p>
+            <p class="merchandise_discount"> 15500 Р.</p>
             <div>
-              <button type="button">КУПИТЬ</button>
-              <button type="button" aria-label="добавить товар в закладки.">В закладки</button>
+              <button class="buy_btn" type="button">
+                КУПИТЬ
+              </button>
+
+              <button class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
             </div>
           </div>
         </li>
         <li>
           <div>
-            <p>new</p>
+            <p class="new_text">new</p>
             <img src="img/catalog/bfg6000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 6000." width="144"
               height="128" />
-            <p>
+            <p class="merchandise_name">
               Перфоратор BOSCH <br />
-              bfg 6000
+              BFG 6000
             </p>
-            <p>30500 Р.</p>
-            <p>25500 Р.</p>
+            <p class="merchandise_price">30500 Р.</p>
+            <p class="merchandise_discount">25500 Р.</p>
             <div>
-              <button type="button">КУПИТЬ</button>
-              <button type="button" aria-label="добавить товар в закладки.">В закладки</button>
+              <button class="buy_btn" type="button">
+                КУПИТЬ
+              </button>
+
+              <button class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
             </div>
           </div>
         </li>
         <li>
           <div>
-            <p>new</p>
+            <p class="new_text">new</p>
             <img src="img/catalog/bfg2000.png" aria-hidden="true" alt="Перфоратор BOSCH bfg 2000." width="144"
               height="128" />
-            <p>
+            <p class="merchandise_name">
               Перфоратор BOSCH <br />
-              bfg 2000
+              BFG 2000
             </p>
-            <p>12500 Р.</p>
+            <p class="merchandise_discount">12500 Р.</p>
             <div>
-              <button type="button">КУПИТЬ</button>
-              <button type="button" aria-label="добавить товар в закладки.">В закладки</button>
+              <button class="buy_btn" type="button">
+                КУПИТЬ
+              </button>
+
+              <button class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
             </div>
           </div>
         </li>
@@ -199,11 +208,11 @@
 
     <section>
       <!--Популярные производители-->
-      <div>
+      <div class="popular">
         <h2>Популярные производители:</h2>
-        <a href="">все производители</a>
+        <a class="lose_button" href="">все производители</a>
       </div>
-      <div>
+      <div class="popular_brand ">
         <a href=""><img src="img/logos/bosch.png" alt="логотип BOSCH." width="220" height="145" /></a>
         <a href=""><img src="img/logos/makita.png" alt="логотип makita." width="220" height="145" /></a>
         <a href=""><img src="img/logos/dewalt.png" alt="логотип dewalt." width="220" height="145" /></a>
