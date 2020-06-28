@@ -34,6 +34,7 @@
   --light_shade_of_gray: #E5E5E5;
   --ecru-white: #F7F3EC;
   --bleach: #F4F4F4;
+  --seashell:#F1F1F1;
   --dark-steel-blue: #1D2739;
 }
 
@@ -539,12 +540,12 @@ padding-right: 24px;*/
 
 .check_input:hover+.check_box::before,
 .check_input:focus+.check_box::before {
-content: url('data:image/svg+xml,%3Csvg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M3.16241 0H20.1624C21.8124 0 23.1624 1.35 23.1624 3V20C23.1624 21.65 21.8124 23 20.1624 23H3.16241C1.51241 23 0.162415 21.65 0.162415 20V3C0.162415 1.35 1.51241 0 3.16241 0ZM21.1624 3C21.1624 2.458 20.7044 2 20.1624 2H3.16241C2.62041 2 2.16241 2.458 2.16241 3V20C2.16241 20.542 2.62041 21 3.16241 21H20.1624C20.7044 21 21.1624 20.542 21.1624 20V3Z" fill="%23B5B5B5"/%3E%3C/svg%3E%0A');
+  content: url('data:image/svg+xml,%3Csvg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M3.16241 0H20.1624C21.8124 0 23.1624 1.35 23.1624 3V20C23.1624 21.65 21.8124 23 20.1624 23H3.16241C1.51241 23 0.162415 21.65 0.162415 20V3C0.162415 1.35 1.51241 0 3.16241 0ZM21.1624 3C21.1624 2.458 20.7044 2 20.1624 2H3.16241C2.62041 2 2.16241 2.458 2.16241 3V20C2.16241 20.542 2.62041 21 3.16241 21H20.1624C20.7044 21 21.1624 20.542 21.1624 20V3Z" fill="%23B5B5B5"/%3E%3C/svg%3E%0A');
 }
 
 .check_input:checked:hover+.check_box::before,
 .check_input:checked:focus+.check_box::before {
-content: url("data:image/svg+xml,%3Csvg width='27' height='23' viewBox='0 0 27 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.44741 7.48604L4.61841 10.315L12.4014 18.098L26.3334 4.16604L23.5054 1.33704L12.4014 12.439L7.44741 7.48604Z' fill='%23B5B5B5'/%3E%3Cpath d='M21.1624 20C21.1624 20.542 20.7044 21 20.1624 21H3.16241C2.62041 21 2.16241 20.542 2.16241 20V3C2.16241 2.458 2.62041 2 3.16241 2H20.0704L21.6554 0.415C21.2034 0.146542 20.6881 0.00329969 20.1624 0H3.16241C1.51241 0 0.162415 1.35 0.162415 3V20C0.162415 21.65 1.51241 23 3.16241 23H20.1624C21.8124 23 23.1624 21.65 23.1624 20V10.171L21.1624 12.171V20Z' fill='%23B5B5B5'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg width='27' height='23' viewBox='0 0 27 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.44741 7.48604L4.61841 10.315L12.4014 18.098L26.3334 4.16604L23.5054 1.33704L12.4014 12.439L7.44741 7.48604Z' fill='%23B5B5B5'/%3E%3Cpath d='M21.1624 20C21.1624 20.542 20.7044 21 20.1624 21H3.16241C2.62041 21 2.16241 20.542 2.16241 20V3C2.16241 2.458 2.62041 2 3.16241 2H20.0704L21.6554 0.415C21.2034 0.146542 20.6881 0.00329969 20.1624 0H3.16241C1.51241 0 0.162415 1.35 0.162415 3V20C0.162415 21.65 1.51241 23 3.16241 23H20.1624C21.8124 23 23.1624 21.65 23.1624 20V10.171L21.1624 12.171V20Z' fill='%23B5B5B5'/%3E%3C/svg%3E");
 }
 
 
@@ -561,7 +562,7 @@ content: url("data:image/svg+xml,%3Csvg width='27' height='23' viewBox='0 0 27 2
 
 .radio_box::before {
   position: absolute;
-    width: 25px;
+  width: 25px;
   height: 25px;
   content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"%3E%3Cpath fill="%23c5c5c5" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/%3E%3C/svg%3E');
   left: -31px;
@@ -1065,6 +1066,32 @@ text-align: center; */
 .popup_btn {
   background-color: var(--bleach);
 }
+
+.catalog_popup p {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  color: var(--classic-black);
+}
+
+.catalog_popup_inner {
+  background-color: var(--seashell);
+}
+
+.continue_shopping {
+  outline: none;
+  border-style: none;
+  color: var(--classic-black);
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  background-color: var(--classic-white);
+  cursor: pointer;
+}
+
+
+/* FOOTER */
 
 .footer {
   background-color: var(--basic-sea);
