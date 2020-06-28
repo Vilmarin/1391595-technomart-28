@@ -76,12 +76,13 @@
       <div class="catalog_sort">
         <h2>СОРТИРОВКА:</h2>
         <ul>
-          <li><a href="#" aria-label="сортировка по цене."><span class="underline">ПО ЦЕНЕ</span></a></li>
-          <li><a href="#" aria-label="сортировка по типу."><span class="underline">ПО ТИПУ</span></a></li>
-          <li><a href="#" aria-label="сортировка по функционалу."><span class="underline">ПО ФУНКЦИОНАЛУ</span></a>
+          <li class="catalog_sort_inner"><a href="#" aria-label="сортировка по цене.">ПО
+              ЦЕНЕ</a></li>
+          <li><a href="#" aria-label="сортировка по типу.">ПО ТИПУ</a></li>
+          <li><a href="#" aria-label="сортировка по функционалу.">ПО ФУНКЦИОНАЛУ</a>
           </li>
-          <li><button class="sort_button" type="button"><svg aria-label="отсортировать по возрастанию." width="11"
-                height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <li><button class="sort_button" type="button" autofocus><svg aria-label="отсортировать по возрастанию."
+                width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 0L11 10L0 10" fill="#231F20" class="sort_button_up" /></svg></button></li>
           <li><button class="sort_button" type="button"><svg aria-label="отсортировать по убыванию."
                 xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
@@ -103,20 +104,20 @@
 
             <legend>Производители:</legend>
             <ul>
-              <li><label class="check"><input class="check_input" type="checkbox" name="bosch" id="filter-bosch"
-                    checked />
-                  <label class="check_box" for="filter-bosch"></label> BOSCH</label>
+              <li class="check"><input class="check_input" type="checkbox" name="bosch" id="filter-bosch" checked />
+                <label class="check_box" for="filter-bosch">BOSCH</label>
               </li>
-              <li><label class="check"><input class="check_input" type="checkbox" name="interskol"
-                    id="filter-interskol" /><label class="check_box" for="filter-interskol"></label>ИНТЕРСКОЛ</label>
+              <li class="check"><input class="check_input" type="checkbox" name="interskol"
+                  id="filter-interskol" /><label class="check_box" for="filter-interskol"> ИНТЕРСКОЛ</label>
               </li>
-              <li><label class="check"><input class="check_input" type="checkbox" name="makita" id="filter-makita"
-                    checked /><label class="check_box" for="filter-makita"></label>MAKIta</label></li>
-              <li><label class="check"><input class="check_input" type="checkbox" name="dewalt"
-                    id="filter-dewalt" /><label class="check_box" for="filter-dewalt"></label>Dewalt</label>
+              <li class="check"><input class="check_input" type="checkbox" name="makita" id="filter-makita" checked />
+                <label class="check_box" for="filter-makita">MAKIta</label>
               </li>
-              <li><label class="check"><input class="check_input" type="checkbox" name="hitachi"
-                    id="filter-hitachi" /><label class="check_box" for="filter-hitachi"></label>Hitachi</label>
+              <li class="check"><input class="check_input" type="checkbox" name="dewalt" id="filter-dewalt" /><label
+                  class="check_box" for="filter-dewalt"> Dewalt</label>
+              </li>
+              <li class="check"><input class="check_input" type="checkbox" name="hitachi" id="filter-hitachi" /><label
+                  class="check_box" for="filter-hitachi"> Hitachi</label>
               </li>
             </ul>
           </fieldset>
@@ -124,12 +125,12 @@
 
             <legend>ПИТАНИЕ:</legend>
             <ul>
-              <li><label class="radio"><input class="radio_input" type="radio" name="supply" value="battery"
-                    id="filter-battery" checked /> <label class="radio_box"
-                    for="filter-battery"></label>Аккумуляторные</label></li>
+              <li class="radio"><input class="radio_input" type="radio" name="supply" value="battery"
+                  id="filter-battery" checked />
+                <label class="radio_box" for="filter-battery">Аккумуляторные</label></li>
 
-              <li><label class="radio"><input class="radio_input" type="radio" name="supply" value="network"
-                    id="filter-network" /><label class="radio_box" for="filter-network"></label>Сетевые</label></li>
+              <li class="radio"><input class="radio_input" type="radio" name="supply" value="network"
+                  id="filter-network" /><label class="radio_box" for="filter-network">Сетевые</label></li>
             </ul>
 
           </fieldset><button type="submit" class="show_button">Показать</button>
@@ -235,7 +236,7 @@
         </li>
       </ul>
       <ul class="page_list">
-        <li><a href="">1</a></li>
+        <li class="page_list_inner"><a href="">1</a></li>
         <li><a href="">2</a></li>
         <li><a href="">3</a></li>
         <li><a href="" aria-label="перейти на следующую страницу каталога">СЛЕДУЮЩАЯ</a></li>
