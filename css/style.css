@@ -403,6 +403,7 @@ padding-right: 24px;*/
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-sea);
+  font-weight: normal;
 
 }
 
@@ -758,6 +759,7 @@ text-align: center; */
   line-height: 30px;
   font-family: "Cuprum", "Tahoma", sans-serif;
   text-transform: uppercase;
+  font-weight: normal;
 
 }
 
@@ -828,6 +830,8 @@ text-align: center; */
   line-height: 30px;
   color: var(--basic-sea);
   font-family: "Cuprum", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 .popular_brand a:hover {
@@ -849,6 +853,7 @@ text-align: center; */
   line-height: 30px;
   color: var(--classic-black);
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .services p {
