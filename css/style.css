@@ -34,7 +34,7 @@
   --light_shade_of_gray: #E5E5E5;
   --ecru-white: #F7F3EC;
   --bleach: #F4F4F4;
-  --seashell:#F1F1F1;
+  --seashell: #F1F1F1;
   --dark-steel-blue: #1D2739;
 }
 
@@ -72,14 +72,54 @@ a {
   display: none;
 }
 
+/* .container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+} */
+
+/* Grid */
+
+/* .page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+} */
+
 /*  header_line  */
+
+/* .header_wrapper {
+  width: 100%;
+  background-color: var(--desaturated-blue);
+} */
+
 .header_line {
+  /*  display: flex;
+  align-items: center; */
+
   background-color: var(--desaturated-blue);
   margin: 0px;
   font-size: 18px;
   line-height: 24px;
   font-family: "Cuprum", "Tahoma", sans-serif;
+  /* outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px; */
+
 }
+
+/* .header_line_menu {
+/*   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+  width: 430px;
+} */
 
 .header_line ul {
   margin: 0px;
@@ -103,6 +143,7 @@ a {
   background-color: var(--classic-red);
 }
 
+
 .logo {
   display: block;
   width: 220px;
@@ -111,6 +152,8 @@ a {
   line-height: 52px;
   background-color: var(--classic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  /*   outline: 5px solid rgba(5, 7, 146, 0.3);
+  outline-offset: -5px; */
 }
 
 .logo:active {
@@ -139,6 +182,9 @@ a {
   padding-left: 25px;
   background-color: transparent;
   border-style: none;
+  /* outline: 5px solid rgba(251, 255, 0, 0.3);
+  outline-offset: -5px;
+  width: 270px; */
 }
 
 .search_input:active,
@@ -213,6 +259,9 @@ margin-left: 28px;*/
 /*header_inner*/
 
 .header_inner {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
   margin: 0px;
   font-family: "Cuprum", "Tahoma", sans-serif;
   background-color: var(--grayish-white);
@@ -224,6 +273,8 @@ margin-left: 28px;*/
   line-height: 23px;
   color: var(--classic-red);
   margin: 0px;
+  /* outline: 5px solid rgba(251, 255, 0, 0.3);
+  outline-offset: -5px; */
 }
 
 .header_inner_phone {
@@ -239,6 +290,16 @@ margin-left: 28px;*/
   line-height: 24px;
   color: var(--basic-sea);
 }
+
+/* .header_contacts_info {
+  outline: 5px solid rgba(39, 26, 224, 0.39);
+  outline-offset: -5px;
+}
+
+.header_user_menu {
+  outline: 5px solid rgba(251, 255, 0, 0.3);
+  outline-offset: -5px;
+} */
 
 .login {
   background-color: var(--classic-white);
@@ -311,9 +372,12 @@ padding-right: 24px;*/
   fill: var(--dark-gray);
 }
 
-.main_nav {
+.main_nav ul {
+  /* display: flex; */
   background-color: var(--basic-sea);
+  /* justify-content: space-evenly; */
   /*margin-bottom: 60px;*/
+  padding: 0;
 }
 
 .main_nav a {
@@ -425,7 +489,8 @@ padding-right: 24px;*/
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  border-bottom: dotted var(--classic-red);
+  border-bottom: 1px dotted var(--classic-red);
+
   mix-blend-mode: normal;
   color: rgba(0, 0, 0, 0.3);
   outline: none;
@@ -433,7 +498,7 @@ padding-right: 24px;*/
 
 .catalog_sort a:hover {
   opacity: 1;
-  border-bottom: 2px solid var(--classic-red);
+  border-bottom: 1px solid var(--classic-red);
 }
 
 .catalog_sort a:active,
@@ -447,6 +512,10 @@ padding-right: 24px;*/
   border-bottom: none;
   color: var(--classic-red);
   opacity: 1;
+}
+
+.catalog_sort_inner a:hover {
+  border-bottom: none;
 }
 
 .sort_button {
@@ -734,23 +803,26 @@ text-align: center; */
   color: var(--classic-white);
 }
 
+
 .page_list a:hover {
   border: 1px solid var(--light-gray);
 }
 
-.page_list a:active {
+.page_list_inner a:hover {
   border: 1px solid var(--classic-red);
 }
 
+
+.page_list a:active,
 .page_list a:focus {
-  background-color: var(--classic-red);
   border: 1px solid var(--classic-red);
-  color: var(--classic-white);
+  outline: none;
 }
 
 /* Пара слов о перфораторах */
 
 .about_hammer_drill {
+  /* display: flex; */
   background-color: var(--basic-sea-light);
 }
 
@@ -847,6 +919,17 @@ text-align: center; */
   background-color: var(--grayish-white);
 }
 
+.services .active_button {
+  color: var(--basic-sea);
+  background-color: var(--classic-white);
+}
+
+.services .active_button:hover {
+  color: var(--basic-sea);
+  background-color: var(--classic-white);
+  /* этого нет в дизайне, но я хотя бы так сделал, потому что если навести на активную кнопку то получается ужс */
+}
+
 .services h2 {
   font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 30px;
@@ -894,8 +977,17 @@ text-align: center; */
 }
 
 
+/* ABOUT COMPANY */
+
+/* .about_company_wrapper {
+  display: flex;
+  justify-content: space-between;
+} */
+
 .about {
   color: var(--classic-black);
+  /* outline: 5px solid rgba(39, 26, 224, 0.39);
+  outline-offset: -5px; */
 }
 
 .about li {
@@ -927,10 +1019,19 @@ text-align: center; */
   line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
+  /* outline: 5px solid rgba(224, 26, 26, 0.39);
+  outline-offset: -5px; */
+}
+
+.about h2 {
+  width: 300px;
 }
 
 .contacts {
   color: var(--classic-black);
+  /*  outline: 5px solid rgba(33, 224, 26, 0.39);
+  outline-offset: -5px;
+  width: 301px; */
 }
 
 .about p,
@@ -972,6 +1073,9 @@ text-align: center; */
 .write_us input {
   border: 2px solid var(--light-gray);
   border-radius: 2px;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-gray);
 }
 
 .write_us textarea {
@@ -988,19 +1092,19 @@ text-align: center; */
 
 .write_us input::-moz-placeholder {
   color: var(--basic-gray);
-  font-size: 18px;
+  font-size: 13px;
   line-height: 24px;
 }
 
 .write_us input:-ms-input-placeholder {
   color: var(--basic-gray);
-  font-size: 18px;
+  font-size: 13px;
   line-height: 24px;
 }
 
 .write_us input:-moz-placeholder {
   color: var(--basic-gray);
-  font-size: 18px;
+  font-size: 13px;
   line-height: 24px;
 }
 
