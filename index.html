@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ТЕХНОМАРТ</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -37,7 +38,7 @@
               <a class="header_bookmarks" href="#">Закладки: 0</a>
             </li>
             <li>
-              <a class="header_basket" href="#">Корзина: 10</a>
+              <a class="header_basket" href="#">Корзина: 0</a>
             </li>
             <li><a href="#" class="place_your_order">Оформить заказ</a></li>
           </ul>
@@ -60,7 +61,8 @@
           </div>
           <div class="header_user_menu">
             <a href="" aria-label="войти в личный кабинет." class="login">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewbox="0 0 20 17" aria-hidden="true">
+              <svg class="login_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewbox="0 0 20 17"
+                aria-hidden="true">
                 <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z" class="login_icon" />
                 <path fill="#c5c5c5"
                   d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"
@@ -88,35 +90,41 @@
     </div>
   </header>
 
+
   <main>
     <section class="container">
       <!--сервисы + слайдер-->
       <div class="main_features">
         <div class="materials">
-          <p class="new_text">new</p>
-          <h3>Материалы</h3>
-          <a href="" aria-label="товары на любой вкус.">на любой вкус</a>
-          <img src="https://via.placeholder.com/150x100" alt="Материалы." width="44" height="65" />
+          <div class="materials_inner">
+            <p class="new_text">new</p>
+            <h3>Материалы</h3>
+            <a href="" aria-label="товары на любой вкус.">на любой вкус</a>
+          </div>
         </div>
         <div class="tools">
-          <h3>Инструмент</h3>
-          <a href="" aria-label="товары на все случаи жизни.">НА ВСЕ СЛУЧАИ</a>
-          <img src="https://via.placeholder.com/150x100" alt="Инструмент." width="44" height="65" />
+          <div class="materials_inner">
+            <h3>Инструмент</h3>
+            <a href="" aria-label="товары на все случаи жизни.">НА ВСЕ СЛУЧАИ</a>
+          </div>
         </div>
         <div class="machinery">
-          <h3>Техника</h3>
-          <a href="" aria-label="инструменты для строительства.">для стройки</a>
-          <img src="https://via.placeholder.com/150x100" alt="Техника." width="44" height="65" />
+          <div class="materials_inner">
+            <h3>Техника</h3>
+            <a href="" aria-label="инструменты для строительства.">для стройки</a>
+          </div>
         </div>
         <div class="discounts">
-          <h3>Скидки 50%</h3>
-          <a href="" aria-label="скидки 50% на 350 товаров.">На 350 ТОВАРОВ</a>
-          <img src="https://via.placeholder.com/150x100" alt="Скидки 50% на 350 товаров." width="44" height="65" />
+          <div class="materials_inner">
+            <h3>Скидки 50%</h3>
+            <a href="" aria-label="скидки 50% на 350 товаров.">На 350 ТОВАРОВ</a>
+          </div>
         </div>
         <div class="delivery">
-          <h3>Доставка</h3>
-          <a href="" aria-label="оформить бесплатную доставку.">Бесплатно</a>
-          <img src="https://via.placeholder.com/150x100" alt="бесплатная доставка." width="44" height="65" />
+          <div class="materials_inner">
+            <h3>Доставка</h3>
+            <a href="" aria-label="оформить бесплатную доставку.">Бесплатно</a>
+          </div>
         </div>
 
         <div class="main_features_slider">
@@ -130,8 +138,20 @@
             <img src="img/slider/hammer_drill.jpg" alt="Мужчина с перфоратором в руках." width="620" height="266" />
             <a class="lose_button" href="/catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
           </div>
-          <button class="arrow_left" type="button" aria-label="пролистать назад слайд.">←</button>
-          <button class="arrow_right" type="button" aria-label="пролистать вперед слайд.">→</button>
+          <button class="arrow_left" type="button" aria-label="пролистать назад слайд."><svg width="22" height="40"
+              viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z"
+                fill="white" />
+            </svg>
+          </button>
+          <button class="arrow_right" type="button" aria-label="пролистать вперед слайд."><svg width="22" height="40"
+              viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.07568 39.0586L0.0775051 37.0108L17.0931 19.564L0.0220261 2.06249L2.02116 0.0146904L21.0894 19.564L2.07568 39.0586Z"
+                fill="white" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
@@ -323,7 +343,7 @@
 
         <h2>Компания «Техномарт»</h2>
 
-        <p>
+        <p class="about_text">
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
           <br />
           ремонта и строительства не оставит равнодушными любителей сэкономить
@@ -332,8 +352,8 @@
           гастарбайтерах.
         </p>
 
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
-        <p>Техномарт работает со многими транспортными компаниями:</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br>
+          Техномарт работает со многими транспортными компаниями:</p>
 
         <ul>
           <li>Деловые линии</li>
@@ -354,49 +374,61 @@
         <a href="https://goo.gl/maps/UqTpzaQLbmj5em4t7"><img src="img/map.jpg" width="300" height="150"
             alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8." /></a>
 
-        <div class="hidden">
-          <button type="button" aria-label="закрыть карту.">х</button>
+        <div class="map_popup hidden">
+          <button aria-label="закрыть карту" class="close_button" type="button">
+            <svg enable-background="new 0 0 21 21" height="21" viewbox="0 0 21 21" width="21"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="close_button_icon"
+                d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"
+                fill="#ee3643" /></svg>
+          </button>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1591653088744!5m2!1sru!2sru"
-            width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+            width="943px" height="449px" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
             aria-label="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8."></iframe>
         </div>
-
-
         <button type="button" aria-label="написать где вы сейчас находитесь." class="lose_button">Заблудились? Напишите
           нам!</button>
-
-
       </div>
-
     </section>
-    <div class="write_us hidden">
-      <button class="close_button" type="button">
-        <svg enable-background="new 0 0 21 21" height="21" viewbox="0 0 21 21" width="21"
-          xmlns="http://www.w3.org/2000/svg">
-          <path class="close_button_icon"
-            d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"
-            fill="#ee3643" /></svg>
-      </button>
-      <form action="https://echo.htmlacademy.ru">
-        <div>
-          <label for="user_name">Ваше имя:</label>
 
-          <input type="text" name="name_field" id="user_name" placeholder="Имя Фамилия">
+    <form class="hidden" action="https://echo.htmlacademy.ru">
+      <div class="write_us_wrapper">
+        <div class="write_us_button">
+          <button class="close_button" type="button">
+            <svg enable-background="new 0 0 21 21" height="21" viewbox="0 0 21 21" width="21"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="close_button_icon"
+                d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"
+                fill="#ee3643" /></svg>
+          </button>
         </div>
 
-        <div>
-          <label for="user_email">Ваш e-mail:</label>
+        <div class="write_us_container">
+          <div class="write_us ">
+            <div class="write_us_inner">
+              <div class="user_name_input">
+                <label for="user_name">Ваше имя:</label>
 
-          <input type="email" name="email_field" id="user_email" placeholder="email@example.com">
+                <input type="text" name="name_field" id="user_name" placeholder="Имя Фамилия">
+              </div>
+              <div class="user_name_input">
+                <label for="user_email">Ваш e-mail:</label>
+
+                <input type="email" name="email_field" id="user_email" placeholder="email@example.com">
+              </div>
+            </div>
+            <div class="write_us_area">
+              <label for="write_field">Текст письма:</label>
+              <textarea cols="40" row="10" placeholder="В свободной форме" id="write_field"></textarea>
+            </div>
+          </div>
         </div>
-
-        <label for="write_field">Текст письма:</label>
-
-        <textarea cols="40" row="10" placeholder="В свободной форме" id="write_field"></textarea>
         <div class="popup_btn"><button class="lose_button" type="submit">Отправить</button></div>
-      </form>
-    </div>
+      </div>
+    </form>
+
+
   </main>
 
   <footer class="footer">
