@@ -364,10 +364,10 @@ hr {
   line-height: 30px;
   border: 3px solid var(--classic-white);
   color: var(--classic-red);
-  padding-top: 6px;
-  padding-bottom: 7px;
-  padding-right: 45px;
-  padding-left: 74px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  width: 270px;
+  text-align: center;
 }
 
 .header_inner_phone::before {
@@ -1318,7 +1318,10 @@ hr {
   text-transform: uppercase;
   color: var(--classic-white);
   background-color: var(--classic-white-shadown);
-  padding: 10px 24px;
+  padding: 10px 0;
+  width: 135px;
+  display: block;
+  text-align: center;
 
 }
 
