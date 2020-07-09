@@ -2030,7 +2030,7 @@ hr {
 .footer_wrapper {
   width: 100%;
   background: var(--basic-sea);
-  padding-bottom: 58px;
+  padding-bottom: 56px;
 
 }
 
@@ -2070,7 +2070,7 @@ hr {
   background-color: var(--desaturated-blue);
   color: var(--classic-white);
   padding-top: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
 }
 
 .footer_phone {
@@ -2087,7 +2087,7 @@ hr {
   color: var(--basic-sea-light);
   padding: 0;
   margin: 0;
-  margin-top: 4px;
+  margin-top: 6px;
   margin-left: 2px;
 }
 
@@ -2224,6 +2224,7 @@ hr {
   justify-content: space-between;
   width: 286px;
   margin-right: 13px;
+  padding-top: 3px;
 }
 
 .feedback>p {
