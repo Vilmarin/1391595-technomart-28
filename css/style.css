@@ -1899,13 +1899,13 @@ hr {
 
 .write_us textarea:-ms-input-placeholder {
   color: var(--basic-gray);
-  font-size: 18px;
+  font-size: 13px;
   line-height: 24px;
 }
 
 .write_us textarea:-moz-placeholder {
   color: var(--basic-gray);
-  font-size: 18px;
+  font-size: 13px;
   line-height: 24px;
 }
 
