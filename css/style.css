@@ -1820,7 +1820,7 @@ hr {
   width: 460px;
   padding-bottom: 36px;
   font-size: 13px;
-  line-height: 24px;
+line-height: 24px;
 }
 
 .write_us_area label {
@@ -1893,7 +1893,7 @@ hr {
 
 .write_us textarea::-moz-placeholder {
   color: var(--basic-gray);
-  font-size: 18px;
+  font-size: 13px;
   line-height: 24px;
 }
 
