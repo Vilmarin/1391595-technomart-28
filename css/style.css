@@ -1050,7 +1050,7 @@ hr {
   align-items: center;
   border: 1px solid var(--gallery);
   overflow: hidden;
-  padding-bottom: 21px;
+  padding-bottom: 18px
 }
 
 
@@ -1084,13 +1084,13 @@ hr {
 
 .merchandise .new_text {
   padding-top: 6px;
-  padding-bottom: 5px;
-  padding-left: 44px;
+  padding-bottom: 4px;
+  padding-left: 40px;
   padding-right: 41px;
   position: absolute;
   transform: rotate(45deg);
-  right: -30px;
-  top: 6px;
+  right: -29px;
+  top: 9px;
 }
 
 .merchandise_btn {
@@ -1223,9 +1223,9 @@ hr {
   color: var(--classic-white);
   z-index: 1;
   background-image: url(../img/svg/red-button.svg);
-  background-position: 10px 5px;
+  background-position: 10px 6px;
   background-repeat: no-repeat;
-  height: 41px;
+  height: 44px;
   width: 150px;
   bottom: 15px;
   padding-left: 43px;
@@ -1318,7 +1318,7 @@ hr {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 123px 123px 123px;
   align-items: center;
-  gap: 20px;
+  gap: 18px 20px;
   padding-top: 59px;
 }
 
@@ -1785,8 +1785,8 @@ hr {
 
 .write_us_button {
   position: absolute;
-      top: 18px;
-    right: 11px
+  top: 18px;
+  right: 11px
 }
 
 .write_us_wrapper::before {
@@ -1822,8 +1822,8 @@ hr {
 }
 
 .write_us_area label {
-      margin-bottom: 10px;
-    margin-top: -2px;
+  margin-bottom: 10px;
+  margin-top: -2px;
 }
 
 .write_us label {
@@ -1838,24 +1838,24 @@ hr {
 }
 
 .write_us input {
-    border: 2px solid var(--light-gray);
-    border-radius: 2px;
-    font-size: 13px;
-    line-height: 24px;
-    color: var(--basic-gray);
-    width: 100%;
-    padding: 5px 10px;
-    margin-top: 10px;
-    margin-bottom: 18px;
+  border: 2px solid var(--light-gray);
+  border-radius: 2px;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-gray);
+  width: 100%;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 18px;
 }
 
 .write_us textarea {
-    border: 2px solid var(--light-gray);
-    resize: none;
-    border-radius: 2px;
-    height: 114px;
-    padding-top: 4px;
-    padding-left: 9px;
+  border: 2px solid var(--light-gray);
+  resize: none;
+  border-radius: 2px;
+  height: 114px;
+  padding-top: 4px;
+  padding-left: 9px;
 
 }
 
@@ -1979,9 +1979,9 @@ hr {
 
 .catalog_popup_wrapper {
   display: flex;
-    padding-left: 81px;
-    padding-top: 50px;
-    padding-bottom: 42px;
+  padding-left: 81px;
+  padding-top: 50px;
+  padding-bottom: 42px;
 }
 
 .catalog_popup_wrapper p {
@@ -2006,19 +2006,19 @@ hr {
   cursor: pointer;
   width: 192px;
   height: 38px;
-    margin-top: 39px;
-    margin-bottom: 9px;
+  margin-top: 39px;
+  margin-bottom: 9px;
 }
 
 .catalog_popup_inner .lose_button {
-    cursor: pointer;
-    width: 192px;
-    height: 38px;
-    padding-top: 11px;
-    padding-left: 48px;
-    margin-right: 9px;
-    margin-bottom: 10px;
-    margin-top: 37px;
+  cursor: pointer;
+  width: 192px;
+  height: 38px;
+  padding-top: 11px;
+  padding-left: 48px;
+  margin-right: 9px;
+  margin-bottom: 10px;
+  margin-top: 37px;
 }
 
 /* FOOTER */
