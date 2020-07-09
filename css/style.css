@@ -870,7 +870,7 @@ hr {
   border: none;
   background-color: var(--classic-black-opacity-10);
   display: block;
-  top: -15px;
+  top: -47px;
   left: -2px;
 }
 
@@ -882,7 +882,7 @@ hr {
   border: none;
   background-color: var(--classic-black-opacity-10);
   display: block;
-  top: -18px;
+  top: -49px;
   left: -2px;
 }
 
@@ -1223,7 +1223,7 @@ hr {
   color: var(--classic-white);
   z-index: 1;
   background-image: url(../img/svg/red-button.svg);
-  background-position: 10px 6px;
+  background-position: 11px 6px;
   background-repeat: no-repeat;
   height: 44px;
   width: 150px;
