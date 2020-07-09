@@ -836,7 +836,7 @@ a {
   text-transform: uppercase;
 }
 
-.producer_cheсkbox {
+.producer_checkbox {
   padding: 0;
   margin-top: 38px;
   padding-left: 0px;
@@ -844,17 +844,17 @@ a {
   position: relative;
 }
 
-.producer_cheсkbox_inner {
+.producer_checkbox_inner {
   padding: 0;
   padding-left: 15px;
   padding-top: 3px;
 }
 
-.producer_cheсkbox li {
+.producer_checkbox li {
   padding-bottom: 20px;
 }
 
-.producer_cheсkbox::before {
+.producer_checkbox::before {
   position: absolute;
   content: " ";
   width: 220px;
@@ -862,8 +862,8 @@ a {
   border: none;
   background-color: var(--classic-black-opacity-10);
   display: block;
-top: -17px;
-    left: -2px;
+  top: -47px;
+  left: -2px;
 }
 
 .battery_radio::before {
@@ -874,7 +874,7 @@ top: -17px;
   border: none;
   background-color: var(--classic-black-opacity-10);
   display: block;
-  top: -17px;
+  top: -49px;
   left: -2px;
 }
 
