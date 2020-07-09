@@ -1819,6 +1819,8 @@ hr {
   flex-direction: column;
   width: 460px;
   padding-bottom: 36px;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .write_us_area label {
