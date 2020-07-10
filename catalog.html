@@ -113,20 +113,32 @@
       <div class="container">
         <div class="main_catalog">
           <div class="catalog_filter">
-            <h2>фильтр</h2>
+            <h2>фильтр:</h2>
             <form action="https://echo.htmlacademy.ru" method="POST">
               <fieldset class="range_container">
-                <legend>ЦЕНА:</legend><label for="price" class="visually_hidden">Ползунок цены</label><input
-                  class="price_range" type="range" name="price" id="price" min="0" max="60000" step="100"
-                  value="250000" /><label for="min_price" class="visually_hidden">минимальная цена</label><input
-                  type="text" name="input_price_min" id="min_price" /><label for="max_price"
-                  class="visually_hidden">максимальная
-                  цена</label><input type="text" name="input_price_max" id="max_price" />
+                <legend>ЦЕНА:</legend>
+                <div class="price_rage_wrapper">
+                  <label for="price" class="visually_hidden">Ползунок цены</label>
+                  <input class="price_range" type="range" name="price" id="price" min="0" max="60000" step="100"
+                    value="250000" />
+                </div>
+
+                <div class="price_wrapper">
+
+                  <label for="min_price" class="visually_hidden">минимальная цена</label>
+                  <input type="text" name="input_price_min" id="min_price" />
+
+
+                  <label for="max_price" class="visually_hidden">максимальная
+                    цена</label>
+                  <input type="text" name="input_price_max" id="max_price" />
+                </div>
+
               </fieldset>
 
               <fieldset class="producer_checkbox">
 
-                <legend>Производители:</legend>
+                <legend class="producer_legend">Производители:</legend>
                 <ul class="producer_checkbox_inner">
                   <li class="check"><input class="check_input" type="checkbox" name="bosch" id="filter-bosch" checked />
                     <label class="check_box" for="filter-bosch">BOSCH</label>
@@ -149,7 +161,7 @@
 
               <fieldset class="battery_radio">
 
-                <legend>ПИТАНИЕ:</legend>
+                <legend class="battery_legend">ПИТАНИЕ:</legend>
                 <ul class="battery_radio_inner">
                   <li class="radio"><input class="radio_input" type="radio" name="supply" value="battery"
                       id="filter-battery" checked />
