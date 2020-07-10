@@ -847,7 +847,7 @@ a {
 }
 
 .price_rage_wrapper {
-background-color: var(--ecru-white);
+  background-color: var(--ecru-white);
 }
 
 .price_wrapper {
@@ -865,9 +865,9 @@ background-color: var(--ecru-white);
 }
 
 .price_range {
-margin-top: 2px;
-margin-left: 19px;
-padding-bottom: 53px;
+  margin-top: 2px;
+  margin-left: 19px;
+  padding-bottom: 53px;
 
 }
 
@@ -906,12 +906,12 @@ padding-bottom: 53px;
 }
 
 .catalog_filter .producer_legend {
-padding-top: 4px;
-padding-bottom: 0px;
+  padding-top: 4px;
+  padding-bottom: 0px;
 }
 
 .catalog_filter .battery_legend {
-    padding: 0;
+  padding: 0;
 }
 
 .producer_checkbox_inner {
@@ -1327,8 +1327,8 @@ padding-bottom: 0px;
 }
 
 .page_list :nth-child(4) a {
-padding-right: 31px;
-padding-left: 31px;
+  padding-right: 31px;
+  padding-left: 31px;
 }
 
 .page_list a {
@@ -1370,7 +1370,7 @@ padding-left: 31px;
   display: flex;
   background-color: var(--basic-sea-light);
   padding-top: 39px;
-padding-bottom: 75px;
+  padding-bottom: 75px;
 
 }
 
