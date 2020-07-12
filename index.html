@@ -278,18 +278,21 @@
             <div class="services_header">
               <ul>
                 <li>
-                  <button class="active_button" type="button" aria-label="открыть условия доставки.">Доставка</button>
+                  <button class="slider_btn slider_btn--active" type="button" aria-label="открыть условия доставки."
+                    data-name="Доставка">Доставка</button>
                 </li>
                 <li>
-                  <button type="button" aria-label="открыть условия гарантии.">Гарантия</button>
+                  <button class="slider_btn" type="button" aria-label="открыть условия гарантии."
+                    data-name="Гарантия">Гарантия</button>
                 </li>
                 <li>
-                  <button class="credit_button" type="button" aria-label="открыть условия кредита.">Кредит</button>
+                  <button class="slider_btn credit_button" type="button" aria-label="открыть условия кредита."
+                    data-name="Кредит">Кредит</button>
                 </li>
               </ul>
 
               <!--Cлайдер-->
-              <div class="services_slider_delivery">
+              <div data-name="Доставка" class="slider slider_show services_slider_delivery">
                 <h2>Доставка</h2>
                 <p>
                   Мы с удовольствием доставим ваш товар прямо <br />
@@ -299,7 +302,7 @@
                 </p>
               </div>
 
-              <div class="services_slider_guarantee">
+              <div data-name="Гарантия" class="slider services_slider_guarantee">
                 <h2>Гарантия</h2>
                 <p>
                   Если купленный у нас товар поломается или заискрит, <br />
@@ -310,7 +313,7 @@
                 </p>
               </div>
 
-              <div class="services_slider_credit">
+              <div data-name="Кредит" class="slider services_slider_credit">
                 <h2>Кредит</h2>
                 <p class="credit_text">
                   Залезть в долговую яму стало проще! <br />
@@ -358,11 +361,11 @@
           заехав в наш офис:
         </p>
 
-        <a href="https://goo.gl/maps/UqTpzaQLbmj5em4t7"><img src="img/map.jpg" width="300" height="150"
+        <a class="open_map" href="#"><img src="img/map.jpg" width="300" height="150"
             alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8." /></a>
 
-        <div class="map_popup hidden">
-          <button aria-label="закрыть карту" class="close_button" type="button">
+        <div class="map_popup">
+          <button aria-label="закрыть карту" class="close_button map_popup_close" type="button">
             <svg enable-background="new 0 0 21 21" height="21" viewbox="0 0 21 21" width="21"
               xmlns="http://www.w3.org/2000/svg">
               <path class="close_button_icon"
@@ -374,15 +377,16 @@
             width="943px" height="449px" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
             aria-label="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8."></iframe>
         </div>
-        <button type="button" aria-label="написать где вы сейчас находитесь." class="lose_button">Заблудились? Напишите
+        <button type="button" aria-label="написать где вы сейчас находитесь."
+          class="lose_button open_popup">Заблудились? Напишите
           нам!</button>
       </div>
     </section>
 
-    <form action="https://echo.htmlacademy.ru">
+    <form class="popup" action="https://echo.htmlacademy.ru">
       <div class="write_us_wrapper">
         <div class="write_us_button">
-          <button class="close_button" type="button">
+          <button class="close_button close_popup" type="button">
             <svg enable-background="new 0 0 21 21" height="21" viewbox="0 0 21 21" width="21"
               xmlns="http://www.w3.org/2000/svg">
               <path class="close_button_icon"
@@ -494,6 +498,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

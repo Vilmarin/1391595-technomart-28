@@ -44,6 +44,7 @@
   --seashell: #F1F1F1;
   --dark-steel-blue: #1D2739;
   --silver: rgba(197, 197, 197, 0.3);
+  --point-color: #ABABAB;
 }
 
 body {
@@ -251,6 +252,9 @@ a {
 
 .search_form {
   position: relative;
+  display: flex;
+  padding-bottom: 5px;
+  align-items: center;
 }
 
 .search_btn {
@@ -276,7 +280,7 @@ a {
   outline: none;
   /* padding-top: 7px; */
   font-size: 18px;
-  line-height: 42px;
+  line-height: 24px;
 }
 
 
@@ -306,33 +310,23 @@ a {
   fill: var(--classic-red);
 }
 
-.search_input::-webkit-input-placeholder {
+.search_input::placeholder {
   color: var(--classic-white);
-  font-size: 18px;
-  line-height: 24px;
-  height: 42px;
+
 }
 
 .search_input::-moz-placeholder {
   color: var(--classic-white);
-  font-size: 18px;
-  line-height: 24px;
   opacity: 1;
-  height: 42px;
 }
 
 .search_input:-ms-input-placeholder {
   color: var(--classic-white);
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .search_input:-moz-placeholder {
   color: var(--classic-white);
-  font-size: 18px;
-  line-height: 24px;
   opacity: 1;
-  height: 42px;
 }
 
 
@@ -791,12 +785,12 @@ a {
 }
 
 .catalog_sort ul :nth-child(4) {
-  padding-left: 38px;
+  padding-left: 41px;
   padding-top: 1px;
 }
 
 .catalog_sort ul :nth-child(5) {
-  padding-left: 4px;
+  padding-left: 12px;
   padding-top: 1px;
 }
 
@@ -814,6 +808,8 @@ a {
   outline: none;
   border-style: none;
   background-color: transparent;
+  padding: 0 5px;
+  cursor: pointer;
 }
 
 .sort_button_up,
@@ -833,13 +829,15 @@ a {
 
 
 
-.catalog_filter fieldset {
+.catalog_filter ul {
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
   color: var(--classic-black);
   border: 0px;
+  margin: 0;
 }
+
 
 .range_container {
   padding: 0;
@@ -865,13 +863,16 @@ a {
 }
 
 .price_range {
-  margin-top: 2px;
-  margin-left: 19px;
-  padding-bottom: 53px;
+  margin-top: 38px;
+  margin-left: 41px;
+  margin-bottom: 38px;
+  padding-bottom: 1px;
+  height: 3px;
 
 }
 
-.catalog_filter legend {
+.catalog_filter p {
+  margin: 0;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -905,9 +906,16 @@ a {
   position: relative;
 }
 
+.producer_checkbox p {
+  padding-top: 3px;
+}
+
 .catalog_filter .producer_legend {
   padding-top: 4px;
-  padding-bottom: 0px;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 45px
 }
 
 .catalog_filter .battery_legend {
@@ -916,9 +924,12 @@ a {
 
 .producer_checkbox_inner {
   padding: 0;
-  padding-left: 15px;
-  padding-top: 3px;
+  margin: 0;
+  padding-left: 18px;
+  padding-top: 6px;
 }
+
+
 
 .producer_checkbox li {
   padding-bottom: 20px;
@@ -932,8 +943,7 @@ a {
   border: none;
   background-color: var(--classic-black-opacity-10);
   display: block;
-  top: -47px;
-  left: -2px;
+  top: -13px;
 }
 
 .battery_radio::before {
@@ -944,8 +954,7 @@ a {
   border: none;
   background-color: var(--classic-black-opacity-10);
   display: block;
-  top: -49px;
-  left: -2px;
+  top: -18px;
 }
 
 .check {
@@ -960,7 +969,7 @@ a {
 
 .battery_radio {
   padding: 0;
-  margin-top: 10px;
+  margin-top: 26px;
   position: relative;
 }
 
@@ -1153,7 +1162,7 @@ a {
   padding-right: 41px;
   position: absolute;
   transform: rotate(45deg);
-  right: -29px;
+  right: -30px;
   top: 7px;
 }
 
@@ -1287,7 +1296,7 @@ a {
   color: var(--classic-white);
   z-index: 1;
   background-image: url(../img/svg/red-button.svg);
-  background-position: 12px 6px;
+  background-position: 11px 5px;
   background-repeat: no-repeat;
   height: 44px;
   width: 152px;
@@ -1297,7 +1306,7 @@ a {
 }
 
 .discount_9000 {
-  background-position: 15px 6px;
+  background-position: 15px 7px;
   height: 45px;
   width: 155px;
   padding-left: 46px;
@@ -1318,8 +1327,6 @@ a {
   padding: 0px;
   display: flex;
   justify-content: start;
-  gap: 11px;
-
 }
 
 .page_list li {
@@ -1340,6 +1347,7 @@ a {
   line-height: 18px;
   padding: 9px 14px;
   text-align: center;
+  margin-right: 11px;
 }
 
 .page_list_inner a {
@@ -1590,7 +1598,6 @@ a {
   position: absolute;
   top: 54%;
   right: 12px;
-  right: 0;
   transform: translateY(-50%);
   border-style: none;
   outline: none;
@@ -1689,6 +1696,7 @@ a {
   background-color: var(--grayish-white);
   padding-top: 38px;
   padding-bottom: 19px;
+  min-height: 522px;
 }
 
 .services_wrapper {
@@ -1736,13 +1744,13 @@ a {
   padding-right: 138px;
 }
 
-.services .active_button {
+.services .slider_btn--active {
   color: var(--basic-sea);
   background-color: var(--classic-white);
 
 }
 
-.services .active_button:hover {
+.services .slider_btn--active:hover {
   color: var(--basic-sea);
   background-color: var(--classic-white);
   /* этого нет в дизайне, но я хотя бы так сделал, потому что если навести на активную кнопку то получается ужс */
@@ -1773,7 +1781,7 @@ a {
   background-repeat: no-repeat;
   width: 100%;
   padding-left: 80px;
-  padding-bottom: 98px;
+
 }
 
 .services_slider_delivery h2 {
@@ -1786,7 +1794,7 @@ a {
 
 .services_slider_guarantee {
   padding-left: 80px;
-  padding-bottom: 98px;
+
   position: relative;
   display: none;
 }
@@ -1804,10 +1812,8 @@ a {
 }
 
 .services_slider_credit {
-  padding-bottom: 98px;
   position: relative;
   padding-left: 80px;
-  padding-bottom: 98px;
   display: none;
 }
 
@@ -1871,6 +1877,14 @@ a {
   background-color: var(--classic-white);
 }
 
+.slider {
+  display: none;
+}
+
+.slider_show {
+  display: block;
+}
+
 
 /* ABOUT COMPANY */
 
@@ -1878,7 +1892,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  padding-top: 71px;
+  padding-top: 70px;
   padding-bottom: 75px;
 }
 
@@ -2026,12 +2040,17 @@ a {
 /* POPUP */
 
 .map_popup {
+  display: none;
   width: 943px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 4px 20px var(--classic-black-opacity-15);
+}
+
+.map_popup_show {
+  display: block;
 }
 
 .map_popup .close_button {
@@ -2053,7 +2072,6 @@ a {
 }
 
 .write_us_wrapper {
-  display: none;
   width: 620px;
   position: fixed;
   top: 50%;
@@ -2064,7 +2082,11 @@ a {
   box-shadow: 0px 4px 20px var(--classic-black-opacity-15);
 }
 
-.write_us_wrapper_show {
+.popup {
+  display: none;
+}
+
+.popup_show {
   display: block;
 }
 
@@ -2559,4 +2581,73 @@ a {
 
 .footer_address+a {
   color: var(--basic-white);
+}
+
+/* filter */
+
+
+.filter_range_wrapper {
+  margin-bottom: 8px;
+  padding: 39px 18px;
+  border-radius: 3px;
+  background-color: var(--ecru-white);
+}
+
+.filter_range {
+  position: relative;
+}
+
+.filter_range_scale {
+  height: 2px;
+}
+
+.filter_range_bar {
+  height: 2px;
+  width: 75%;
+  background-color: var(--feijoa);
+}
+
+.filter_range_handle {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  box-sizing: content-box;
+  padding: 0;
+  border: 8px solid var(--classic-white);
+  border-radius: 50%;
+  background-color: var(--point-color);
+  cursor: pointer;
+}
+
+.filter_interval {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter_interval label {
+  width: 50%;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter_interval label:last-child {
+  text-align: right;
+}
+
+.filter_interval input {
+  width: 95px;
+  height: 38px;
+  border-radius: 2px;
+  border: none;
+  text-align: center;
+  background-color: var(--ecru-white);
+  font-size: 17px;
+  line-height: 18px;
+
 }

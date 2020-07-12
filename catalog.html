@@ -4,10 +4,11 @@
 <head>
   <meta charset="utf-8" />
   <title>Каталог</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -115,30 +116,34 @@
           <div class="catalog_filter">
             <h2>фильтр:</h2>
             <form action="https://echo.htmlacademy.ru" method="POST">
-              <fieldset class="range_container">
-                <legend>ЦЕНА:</legend>
-                <div class="price_rage_wrapper">
-                  <label for="price" class="visually_hidden">Ползунок цены</label>
-                  <input class="price_range" type="range" name="price" id="price" min="0" max="60000" step="100"
-                    value="250000" />
+              <aside class="range_container">
+
+                <p>ЦЕНА:</p>
+                <div class="filter">
+                  <div class="filter_range_wrapper">
+                    <div class="filter_range">
+                      <div class="filter_range_scale">
+                        <div class="filter_range_bar"></div>
+                      </div>
+                      <button type="button" class="filter_range_handle min"></button>
+                      <button type="button" class="filter_range_handle max" style="left: 75%  ;"></button>
+                    </div>
+                  </div>
+
+                  <div class="filter_interval">
+                    <label class="hidden"> минимальная цена </label>
+                    <input type="text" name="min-interval" value="0">
+                    &mdash;
+                    <label class="hidden"> максимальная цена</label>
+                    <input type="text" name="max-interval" value="30000">
+                  </div>
                 </div>
 
-                <div class="price_wrapper">
+              </aside>
 
-                  <label for="min_price" class="visually_hidden">минимальная цена</label>
-                  <input type="text" name="input_price_min" id="min_price" />
+              <aside class="producer_checkbox">
 
-
-                  <label for="max_price" class="visually_hidden">максимальная
-                    цена</label>
-                  <input type="text" name="input_price_max" id="max_price" />
-                </div>
-
-              </fieldset>
-
-              <fieldset class="producer_checkbox">
-
-                <legend class="producer_legend">Производители:</legend>
+                <p>Производители:</p>
                 <ul class="producer_checkbox_inner">
                   <li class="check"><input class="check_input" type="checkbox" name="bosch" id="filter-bosch" checked />
                     <label class="check_box" for="filter-bosch">BOSCH</label>
@@ -157,11 +162,11 @@
                       id="filter-hitachi" /><label class="check_box" for="filter-hitachi"> Hitachi</label>
                   </li>
                 </ul>
-              </fieldset>
+              </aside>
 
-              <fieldset class="battery_radio">
+              <aside class="battery_radio">
 
-                <legend class="battery_legend">ПИТАНИЕ:</legend>
+                <p class="battery_legend">ПИТАНИЕ:</p>
                 <ul class="battery_radio_inner">
                   <li class="radio"><input class="radio_input" type="radio" name="supply" value="battery"
                       id="filter-battery" checked />
@@ -171,7 +176,7 @@
                       id="filter-network" /><label class="radio_box" for="filter-network">Сетевые</label></li>
                 </ul>
 
-              </fieldset><button type="submit" class="show_button">Показать</button>
+              </aside><button type="submit" class="show_button">Показать</button>
             </form>
           </div>
 
@@ -207,8 +212,8 @@
                     <p class="merchandise_discount"> 25500 Р.</p>
                   </div>
                   <div class="merchandise_btn">
-                    <button class="buy_btn" type="button">КУПИТЬ </button><button class="bookmarks_btn" type="button"
-                      aria-label="добавить товар в закладки.">В закладки</button></div>
+                    <button class="buy_btn open_popup" type="button">КУПИТЬ </button><button class="bookmarks_btn"
+                      type="button" aria-label="добавить товар в закладки.">В закладки</button></div>
                 </div>
 
               </li>
@@ -226,8 +231,8 @@
                     <p class="merchandise_discount">25500 Р.</p>
                   </div>
                   <div class="merchandise_btn">
-                    <button class="buy_btn" type="button">КУПИТЬ </button><button class="bookmarks_btn" type="button"
-                      aria-label="добавить товар в закладки.">В закладки</button>
+                    <button class="buy_btn open_popup" type="button">КУПИТЬ </button><button class="bookmarks_btn"
+                      type="button" aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
               </li>
@@ -244,7 +249,7 @@
                     <p class="merchandise_price">30500 Р.</p>
                     <p class="merchandise_discount">25500 Р.</p>
                   </div>
-                  <div class="merchandise_btn"><button class="buy_btn" type="button">КУПИТЬ </button><button
+                  <div class="merchandise_btn"><button class="buy_btn open_popup" type="button">КУПИТЬ </button><button
                       class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
@@ -262,7 +267,7 @@
                     <p class="merchandise_price">22500 Р.</p>
                     <p class="merchandise_discount">15500 Р.</p>
                   </div>
-                  <div class="merchandise_btn"><button class="buy_btn" type="button">КУПИТЬ </button><button
+                  <div class="merchandise_btn"><button class="buy_btn open_popup" type="button">КУПИТЬ </button><button
                       class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
@@ -280,7 +285,7 @@
                     <p class="merchandise_price">30500 Р.</p>
                     <p class="merchandise_discount">25500 Р.</p>
                   </div>
-                  <div class="merchandise_btn"><button class="buy_btn" type="button">КУПИТЬ </button><button
+                  <div class="merchandise_btn"><button class="buy_btn open_popup" type="button">КУПИТЬ </button><button
                       class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
@@ -299,7 +304,7 @@
                     </p>
                     <p class="merchandise_discount">12500 Р.</p>
                   </div>
-                  <div class="merchandise_btn"><button class="buy_btn" type="button">КУПИТЬ </button><button
+                  <div class="merchandise_btn"><button class="buy_btn open_popup" type="button">КУПИТЬ </button><button
                       class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
@@ -318,7 +323,7 @@
                     <p class="merchandise_discount">15500 Р.</p>
                   </div>
                   <div class="merchandise_btn">
-                    <button class="buy_btn" type="button">КУПИТЬ </button>
+                    <button class="buy_btn open_popup" type="button">КУПИТЬ </button>
                     <button class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В
                       закладки</button></div>
                 </div>
@@ -336,7 +341,7 @@
                     <p class="merchandise_price">30500 Р.</p>
                     <p class="merchandise_discount">25500 Р.</p>
                   </div>
-                  <div class="merchandise_btn"><button class="buy_btn" type="button">КУПИТЬ </button><button
+                  <div class="merchandise_btn"><button class="buy_btn open_popup" type="button">КУПИТЬ </button><button
                       class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
@@ -355,7 +360,7 @@
                     </p>
                     <p class="merchandise_discount">12500 Р.</p>
                   </div>
-                  <div class="merchandise_btn"><button class="buy_btn" type="button">КУПИТЬ</button><button
+                  <div class="merchandise_btn"><button class="buy_btn open_popup" type="button">КУПИТЬ</button><button
                       class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
@@ -371,9 +376,9 @@
         </div>
       </div>
 
-      <div class="write_us_wrapper">
+      <div class="popup write_us_wrapper">
         <div class="write_us_button">
-          <button class="close_button" type="button">
+          <button class="close_button close_popup" type="button">
             <svg enable-background="new 0 0 21 21" height="21" viewbox="0 0 21 21" width="21"
               xmlns="http://www.w3.org/2000/svg">
               <path class="close_button_icon"
@@ -485,7 +490,8 @@
       </div>
     </div>
   </footer>
-  <!-- <script type="module" src="./js/script.js"></script> -->
+  <script src="./js/script.js"></script>
+
 </body>
 
 </html>
