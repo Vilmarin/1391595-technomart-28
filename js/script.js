@@ -1,24 +1,39 @@
 /* POPUP */
 {
-  const openPopup = document.querySelectorAll('.open_popup')
+  const open_popup = document.querySelectorAll('.open_popup')
   const popup = document.querySelector('.popup')
-  const closePopup = document.querySelector('.close_popup')
+  const close_popup = document.querySelector('.close_popup')
+  const send = document.querySelector('.popup_btn')
+  const user_name = popup.querySelector('[name=name_field]')
+  const email = popup.querySelector('[name=email_field]')
+
 
   const POPUP_SHOW = "popup_show"
 
   if (popup) {
-    openPopup.forEach(Element => {
+    open_popup.forEach(Element => {
       Element.addEventListener('click', () => {
         popup.classList.add(POPUP_SHOW)
       })
     })
 
-    closePopup.addEventListener('click', () => {
+    close_popup.addEventListener('click', () => {
       popup.classList.remove(POPUP_SHOW);
+      popup.classList.remove('popup_error')
     })
   } else {
     console.log("POPUP пустой");
   }
+
+  send.addEventListener('click', (evt) => {
+    if (!user_name.value || !email.value) {
+      evt.preventDefault();
+      popup.classList.remove('popup_error');
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add('popup_error');
+    }
+  })
+
 }
 
 /* SLIDER */
