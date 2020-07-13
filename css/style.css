@@ -2049,6 +2049,11 @@ a {
   box-shadow: 0px 4px 20px var(--classic-black-opacity-15);
 }
 
+.map_popup iframe {
+  width:943px;
+  height: 449px;
+}
+
 .map_popup_show {
   display: block;
 }
