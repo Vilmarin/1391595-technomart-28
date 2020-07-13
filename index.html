@@ -145,6 +145,10 @@
                 fill="white" />
             </svg>
           </button>
+          <ul class="bullet">
+            <li></li>
+            <li></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -173,8 +177,9 @@
                 <p class="merchandise_price">32500 Р.</p>
                 <p class="merchandise_discount discount_9000">25500 Р.</p>
               </div>
-              <div class="merchandise_btn"><button class="buy_btn" type="button">КУПИТЬ </button><button
-                  class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
+              <div class="merchandise_btn">
+                <a href="#" aria-label="Купить перфоратор bfg9000" class="buy_btn">КУПИТЬ</a>
+                <button class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
               </div>
             </div>
           </li>
@@ -191,8 +196,9 @@
                 <p class="merchandise_price">22500 Р.</p>
                 <p class="merchandise_discount">15500 Р.</p>
               </div>
-              <div class="merchandise_btn"><button class="buy_btn" type="button">КУПИТЬ </button><button
-                  class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
+              <div class="merchandise_btn"><a href="#" aria-label="Купить перфоратор bfg3000"
+                  class="buy_btn">КУПИТЬ</a><button class="bookmarks_btn" type="button"
+                  aria-label="добавить товар в закладки.">В закладки</button>
               </div>
             </div>
           </li>
@@ -210,8 +216,8 @@
                 <p class="merchandise_discount"> 25500 Р.</p>
               </div>
               <div class="merchandise_btn">
-                <button class="buy_btn" type="button">КУПИТЬ </button><button class="bookmarks_btn" type="button"
-                  aria-label="добавить товар в закладки.">В закладки</button></div>
+                <a href="#" aria-label="Купить перфоратор bfg6000" class="buy_btn">КУПИТЬ</a><button
+                  class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button></div>
             </div>
           </li>
           <li>
@@ -228,8 +234,9 @@
                 </p>
                 <p class="merchandise_discount">12500 Р.</p>
               </div>
-              <div class="merchandise_btn"><button class="buy_btn" type="button">КУПИТЬ</button><button
-                  class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
+              <div class="merchandise_btn"><a href="#" aria-label="Купить перфоратор bfg2000"
+                  class="buy_btn">КУПИТЬ</a><button class="bookmarks_btn" type="button"
+                  aria-label="добавить товар в закладки.">В закладки</button>
               </div>
             </div>
           </li>
@@ -361,7 +368,7 @@
           заехав в наш офис:
         </p>
 
-        <a class="open_map" href="#"><img src="img/map.jpg" width="300" height="150"
+        <a class="open_map" href="/img/map.jpg"><img src="img/map.jpg" width="300" height="150"
             alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8." /></a>
 
         <div class="map_popup">
@@ -377,9 +384,9 @@
             style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
             aria-label="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8."></iframe>
         </div>
-        <button type="button" aria-label="написать где вы сейчас находитесь."
+        <a href="write_us.html" aria-label="написать где вы сейчас находитесь."
           class="lose_button open_popup">Заблудились? Напишите
-          нам!</button>
+          нам!</a>
       </div>
     </section>
 
@@ -468,25 +475,25 @@
 
           <ul class="social_network">
             <li>
-              <a href="" class="vk_icon"></a>
+              <a href="" aria-label="ссылка на вконтакте" class="vk_icon"></a>
             </li>
             <li>
-              <a href="" class="fb_icon"></a>
+              <a href="" aria-label="ссылка на фейсбук" class="fb_icon"></a>
             </li>
             <li>
-              <a href="" class="insta_icon"> </a>
+              <a href="" aria-label="ссылка на инстаграм" class="insta_icon"> </a>
             </li>
           </ul>
 
           <div class="feedback">
             <p>
-              Обратная связь:<br />
+              Обратная связь:
               <a href="mailto:mail@htmlacademy.ru" aria-label="написать письмо нам на почту."
                 class="yellow_color">mail@htmlacademy.ru</a>
             </p>
 
-            <p>
-              Разработано &mdash; <br />
+            <p class="developed">
+              Разработано &mdash;
               <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="перейти на сайт разработчиков."
                 class="yellow_color">
                 htmlacademy.ru
@@ -497,7 +504,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/min-js.js"></script>
 </body>
 
 </html>

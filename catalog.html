@@ -57,17 +57,17 @@
                     d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"
                     class="user_icon" />
                 </svg>Равшан Джамшутович</a>
-
-              <a class="log_out" href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewbox="0 0 21 17"
-                  aria-label="выйти из личного кабинета.">
-                  <g fill="#c5c5c5">
-                    <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z" />
-                    <path fill="#c5c5c5"
-                      d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z" />
-                  </g>
-                </svg></a>
             </div>
+            <a class="log_out" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewbox="0 0 21 17"
+                aria-label="выйти из личного кабинета.">
+                <g fill="#c5c5c5">
+                  <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z" />
+                  <path fill="#c5c5c5"
+                    d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z" />
+                </g>
+              </svg></a>
+
             <div class="user_menu_inner">
               <a class="users_orders" href="">Мои заказы</a>
               <a class="login_sub_title" href="">Личный кабинет</a>
@@ -115,7 +115,7 @@
           <div class="catalog_filter">
             <h2>фильтр:</h2>
             <form action="https://echo.htmlacademy.ru" method="POST">
-              <aside class="range_container">
+              <div class="range_container">
 
                 <p>ЦЕНА:</p>
                 <div class="filter">
@@ -124,27 +124,30 @@
                       <div class="filter_range_scale">
                         <div class="filter_range_bar"></div>
                       </div>
-                      <button type="button" class="filter_range_handle min"></button>
-                      <button type="button" class="filter_range_handle max" style="left: 75%  ;"></button>
+                      <button type="button" aria-label="ползунок минимальной цены"
+                        class="filter_range_handle min"></button>
+                      <button type="button" aria-label="ползунок максимальной цены" class="filter_range_handle max"
+                        style="left: 75%  ;"></button>
                     </div>
                   </div>
 
                   <div class="filter_interval">
-                    <label for="min_price" class="hidden"> минимальная цена </label>
+                    <label for="min_price" class="visually_hidden"> минимальная цена </label>
                     <input type="text" name="min-interval" value="0" id="min_price">
                     &mdash;
-                    <label for="max_price" class="hidden"> максимальная цена</label>
+                    <label for="max_price" class="visually_hidden"> максимальная цена</label>
                     <input type="text" name="max-interval" value="30000" id="max_price">
                   </div>
                 </div>
 
-              </aside>
+              </div>
 
-              <aside class="producer_checkbox">
+              <div class="producer_checkbox">
 
                 <p>Производители:</p>
                 <ul class="producer_checkbox_inner">
-                  <li class="check"><input class="check_input" type="checkbox" name="bosch" id="filter-bosch" checked />
+                  <li class="check"><input class="check_input" type="checkbox" name="bosch" id="filter-bosch" checked
+                      disabled />
                     <label class="check_box" for="filter-bosch">BOSCH</label>
                   </li>
                   <li class="check"><input class="check_input" type="checkbox" name="interskol"
@@ -161,9 +164,9 @@
                       id="filter-hitachi" /><label class="check_box" for="filter-hitachi"> Hitachi</label>
                   </li>
                 </ul>
-              </aside>
+              </div>
 
-              <aside class="battery_radio">
+              <div class="battery_radio">
 
                 <p class="battery_legend">ПИТАНИЕ:</p>
                 <ul class="battery_radio_inner">
@@ -175,7 +178,7 @@
                       id="filter-network" /><label class="radio_box" for="filter-network">Сетевые</label></li>
                 </ul>
 
-              </aside><button type="submit" class="show_button">Показать</button>
+              </div><button type="submit" class="show_button">Показать</button>
             </form>
           </div>
 
@@ -183,20 +186,23 @@
             <div class="catalog_sort">
               <h2>СОРТИРОВКА:</h2>
               <ul>
-                <li class="catalog_sort_inner"><a href="#" aria-label="сортировка по цене.">ПО
+                <li class="catalog_sort_inner"><a class="catalog_sort_link" href="#" aria-label="сортировка по цене.">ПО
                     ЦЕНЕ</a></li>
-                <li><a href="#" aria-label="сортировка по типу.">ПО ТИПУ</a></li>
-                <li><a href="#" aria-label="сортировка по функционалу.">ПО ФУНКЦИОНАЛУ</a>
+                <li><a class="catalog_sort_link" href="#" aria-label="сортировка по типу.">ПО ТИПУ</a></li>
+                <li><a class="catalog_sort_link" href="#" aria-label="сортировка по функционалу.">ПО ФУНКЦИОНАЛУ</a>
                 </li>
-                <li><button class="sort_button" type="button" autofocus><svg aria-label="отсортировать по возрастанию."
+                <li>
+                  <a class="sort_button sort_button_current" autofocus><svg aria-label="отсортировать по возрастанию."
                       width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.5 0L11 10L0 10" fill="#231F20" class="sort_button_up" /></svg></button></li>
-                <li><button class="sort_button" type="button"><svg aria-label="отсортировать по убыванию."
-                      xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
-                      <path fill="#231F20" d="M5.5 10L0 0h11" class="sort_button_down" /></svg></button></li>
+                      <path d="M5.5 0L11 10L0 10" fill="currentColor" class="sort_button_up" /></svg></a></li>
+                <li>
+                  <a class="sort_button"><svg aria-label="отсортировать по убыванию." xmlns="http://www.w3.org/2000/svg"
+                      width="11" height="10" viewbox="0 0 11 10">
+                      <path fill="currentColor" d="M5.5 10L0 0h11" class="sort_button_down" /></svg></a></li>
               </ul>
             </div>
-            <ul class="catalog_list">
+
+            <ul class="catalog_list" tabindex="1">
               <li>
                 <div class="merchandise">
                   <p class="new_text invisible">new</p>
@@ -211,8 +217,9 @@
                     <p class="merchandise_discount"> 25500 Р.</p>
                   </div>
                   <div class="merchandise_btn">
-                    <button class="buy_btn open_popup" type="button">КУПИТЬ </button><button class="bookmarks_btn"
-                      type="button" aria-label="добавить товар в закладки.">В закладки</button></div>
+                    <a href="#" aria-label="Купить перфоратор bfg6000" class="buy_btn open_popup">КУПИТЬ</a><button
+                      class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
+                  </div>
                 </div>
 
               </li>
@@ -230,8 +237,8 @@
                     <p class="merchandise_discount">25500 Р.</p>
                   </div>
                   <div class="merchandise_btn">
-                    <button class="buy_btn open_popup" type="button">КУПИТЬ </button><button class="bookmarks_btn"
-                      type="button" aria-label="добавить товар в закладки.">В закладки</button>
+                    <a href="#" aria-label="Купить перфоратор bfg6000" class="buy_btn open_popup">КУПИТЬ</a><button
+                      class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
               </li>
@@ -248,8 +255,9 @@
                     <p class="merchandise_price">30500 Р.</p>
                     <p class="merchandise_discount">25500 Р.</p>
                   </div>
-                  <div class="merchandise_btn"><button class="buy_btn open_popup" type="button">КУПИТЬ </button><button
-                      class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
+                  <div class="merchandise_btn"><a href="#" aria-label="Купить перфоратор bfg6000"
+                      class="buy_btn open_popup">КУПИТЬ</a><button class="bookmarks_btn" type="button"
+                      aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
               </li>
@@ -266,8 +274,9 @@
                     <p class="merchandise_price">22500 Р.</p>
                     <p class="merchandise_discount">15500 Р.</p>
                   </div>
-                  <div class="merchandise_btn"><button class="buy_btn open_popup" type="button">КУПИТЬ </button><button
-                      class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
+                  <div class="merchandise_btn"><a href="#" aria-label="Купить перфоратор bfg3000"
+                      class="buy_btn open_popup">КУПИТЬ</a><button class="bookmarks_btn" type="button"
+                      aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
               </li>
@@ -284,8 +293,9 @@
                     <p class="merchandise_price">30500 Р.</p>
                     <p class="merchandise_discount">25500 Р.</p>
                   </div>
-                  <div class="merchandise_btn"><button class="buy_btn open_popup" type="button">КУПИТЬ </button><button
-                      class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
+                  <div class="merchandise_btn"><a href="#" aria-label="Купить перфоратор bfg6000"
+                      class="buy_btn open_popup">КУПИТЬ</a><button class="bookmarks_btn" type="button"
+                      aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
               </li>
@@ -303,8 +313,9 @@
                     </p>
                     <p class="merchandise_discount">12500 Р.</p>
                   </div>
-                  <div class="merchandise_btn"><button class="buy_btn open_popup" type="button">КУПИТЬ </button><button
-                      class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
+                  <div class="merchandise_btn"><a href="#" aria-label="Купить перфоратор bfg2000"
+                      class="buy_btn open_popup">КУПИТЬ</a><button class="bookmarks_btn" type="button"
+                      aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
               </li>
@@ -322,7 +333,7 @@
                     <p class="merchandise_discount">15500 Р.</p>
                   </div>
                   <div class="merchandise_btn">
-                    <button class="buy_btn open_popup" type="button">КУПИТЬ </button>
+                    <a href="#" aria-label="Купить перфоратор bfg3000" class="buy_btn open_popup">КУПИТЬ</a>
                     <button class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В
                       закладки</button></div>
                 </div>
@@ -340,8 +351,9 @@
                     <p class="merchandise_price">30500 Р.</p>
                     <p class="merchandise_discount">25500 Р.</p>
                   </div>
-                  <div class="merchandise_btn"><button class="buy_btn open_popup" type="button">КУПИТЬ </button><button
-                      class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
+                  <div class="merchandise_btn"><a href="#" aria-label="Купить перфоратор bfg6000"
+                      class="buy_btn open_popup">КУПИТЬ</a><button class="bookmarks_btn" type="button"
+                      aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
               </li>
@@ -353,14 +365,15 @@
                       height="128" />
                   </div>
                   <div class="merchandise_description">
-                    <p class="merchandise_name">Перфоратор BOSCH </p>
-                    <p class="merchandise_name">BFG 2000 </p>
+                    <p class="merchandise_name">Перфоратор BOSCH</p>
+                    <p class="merchandise_name">BFG 2000</p>
                     <p class="merchandise_price invisible">30500 Р.
                     </p>
                     <p class="merchandise_discount">12500 Р.</p>
                   </div>
-                  <div class="merchandise_btn"><button class="buy_btn open_popup" type="button">КУПИТЬ</button><button
-                      class="bookmarks_btn" type="button" aria-label="добавить товар в закладки.">В закладки</button>
+                  <div class="merchandise_btn"><a href="#" aria-label="Купить перфоратор bfg2000"
+                      class="buy_btn open_popup">КУПИТЬ</a><button class="bookmarks_btn" type="button"
+                      aria-label="добавить товар в закладки.">В закладки</button>
                   </div>
                 </div>
               </li>
@@ -377,7 +390,7 @@
 
       <div class="popup write_us_wrapper">
         <div class="write_us_button">
-          <button class="close_button close_popup" type="button">
+          <button aria-label="закрыть форму" class="close_button close_popup" type="button">
             <svg enable-background="new 0 0 21 21" height="21" viewbox="0 0 21 21" width="21"
               xmlns="http://www.w3.org/2000/svg">
               <path class="close_button_icon"
@@ -459,25 +472,25 @@
 
           <ul class="social_network">
             <li>
-              <a href="" class="vk_icon"></a>
+              <a href="" aria-label="ссылка на вконтакте" class="vk_icon"></a>
             </li>
             <li>
-              <a href="" class="fb_icon"></a>
+              <a href="" aria-label="ссылка на фейсбук" class="fb_icon"></a>
             </li>
             <li>
-              <a href="" class="insta_icon"> </a>
+              <a href="" aria-label="ссылка на инстаграм" class="insta_icon"> </a>
             </li>
           </ul>
 
           <div class="feedback">
             <p>
-              Обратная связь:<br />
+              Обратная связь:
               <a href="mailto:mail@htmlacademy.ru" aria-label="написать письмо нам на почту."
                 class="yellow_color">mail@htmlacademy.ru</a>
             </p>
 
-            <p>
-              Разработано &mdash; <br />
+            <p class="developed">
+              Разработано &mdash;
               <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="перейти на сайт разработчиков."
                 class="yellow_color">
                 htmlacademy.ru
@@ -488,7 +501,7 @@
       </div>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+  <script src="./js/min-js.js"></script>
 
 </body>
 

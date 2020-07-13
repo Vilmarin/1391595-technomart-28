@@ -48,7 +48,7 @@
 }
 
 body {
-  min-width: 1220px;
+  min-width: 960px;
   padding: 0;
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
@@ -504,8 +504,8 @@ a {
 .log_out {
   position: absolute;
   background-color: var(--classic-white);
-  right: 15px;
-  top: 50%;
+  right: 16px;
+  top: 41%;
   transform: translateY(-50%);
 }
 
@@ -659,10 +659,11 @@ a {
   margin: 0px;
   padding: 0px;
   display: flex;
-  justify-content: space-between;
-  width: 356px;
+  justify-content: flex-start;
+  max-width: 100%;
   align-items: center;
   padding-top: 21px;
+  flex-wrap: wrap;
 }
 
 .catalog_nav a {
@@ -682,6 +683,7 @@ a {
   display: flex;
   align-items: center;
   height: 18px;
+  margin-right: 41px;
 }
 
 .catalog_nav li::after {
@@ -739,13 +741,14 @@ a {
   line-height: 18px;
   padding-top: 9px;
   margin: 0;
+  font-weight: normal;
 }
 
 .catalog_sort li {
   list-style: none;
 }
 
-.catalog_sort a {
+.catalog_sort_link {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -755,13 +758,13 @@ a {
   outline: none;
 }
 
-.catalog_sort a:hover {
+.catalog_sort_link:hover {
   opacity: 1;
   border-bottom: 1px solid var(--classic-red);
 }
 
-.catalog_sort a:active,
-.catalog_sort a:focus {
+.catalog_sort_link:active,
+.catalog_sort_link:focus {
   border-bottom: none;
   color: var(--classic-red);
   opacity: 1;
@@ -805,29 +808,27 @@ a {
 }
 
 .sort_button {
-  outline: none;
-  border-style: none;
-  background-color: transparent;
+  display: block;
   padding: 0 5px;
   cursor: pointer;
+  color: var(--light-gray);
 }
 
-.sort_button_up,
-.sort_button_down {
-  fill: var(--light-gray);
+.sort_button:hover,
+.sort_button:hover {
+  color: var(--classic-black);
 }
 
-.sort_button:hover .sort_button_up,
-.sort_button:hover .sort_button_down {
-  fill: var(--classic-black);
+.sort_button:focus,
+.sort_button:focus,
+.sort_button:active,
+.sort_button:active {
+  color: var(--classic-red);
 }
 
-.sort_button:focus .sort_button_up,
-.sort_button:focus .sort_button_down {
-  fill: var(--classic-red);
+.sort_button_current {
+  color: var(--classic-red);
 }
-
-
 
 .catalog_filter ul {
   font-size: 15px;
@@ -896,6 +897,7 @@ a {
   padding: 10px 0;
   padding-left: 0px;
   padding-left: 18px;
+  font-weight: normal;
 }
 
 .producer_checkbox {
@@ -1003,6 +1005,7 @@ a {
   content: none;
 }
 
+
 .check_input:checked+.check_box::before {
   content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"%3E%3Cpath fill="%23c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/%3E%3Cpath fill="%23c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/%3E%3C/svg%3E%0A');
   width: 27px;
@@ -1017,6 +1020,13 @@ a {
 .check_input:checked:focus+.check_box::before {
   content: url("data:image/svg+xml,%3Csvg width='27' height='23' viewBox='0 0 27 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.44741 7.48604L4.61841 10.315L12.4014 18.098L26.3334 4.16604L23.5054 1.33704L12.4014 12.439L7.44741 7.48604Z' fill='%23B5B5B5'/%3E%3Cpath d='M21.1624 20C21.1624 20.542 20.7044 21 20.1624 21H3.16241C2.62041 21 2.16241 20.542 2.16241 20V3C2.16241 2.458 2.62041 2 3.16241 2H20.0704L21.6554 0.415C21.2034 0.146542 20.6881 0.00329969 20.1624 0H3.16241C1.51241 0 0.162415 1.35 0.162415 3V20C0.162415 21.65 1.51241 23 3.16241 23H20.1624C21.8124 23 23.1624 21.65 23.1624 20V10.171L21.1624 12.171V20Z' fill='%23B5B5B5'/%3E%3C/svg%3E");
 }
+
+
+.check_input:disabled+.check_box::after,
+.check_input:disabled+.check_box::before {
+  opacity: 0.4;
+}
+
 
 
 /* Radio */
@@ -1333,7 +1343,7 @@ a {
   list-style: none;
 }
 
-.page_list :nth-child(4) a {
+.page_list :last-child a {
   padding-right: 31px;
   padding-left: 31px;
 }
@@ -1560,7 +1570,7 @@ a {
 .machinery,
 .discounts,
 .delivery {
-  height: 100%;
+  min-height: 100%;
 }
 
 .main_features_slider {
@@ -1663,6 +1673,7 @@ a {
 .popular .lose_button {
   padding: 10px 24px;
   margin-right: 14px;
+  width: 192px;
 }
 
 .popular .producer_lose_button {
@@ -1753,7 +1764,7 @@ a {
 .services .slider_btn--active:hover {
   color: var(--basic-sea);
   background-color: var(--classic-white);
-  /* этого нет в дизайне, но я хотя бы так сделал, потому что если навести на активную кнопку то получается ужс */
+
 }
 
 .services h2 {
@@ -1885,6 +1896,35 @@ a {
   display: block;
 }
 
+.bullet {
+  width: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 38px;
+  left: 295px;
+}
+
+.bullet li {
+  width: 10px;
+  height: 10px;
+  background: var(--classic-white);
+  border-radius: 50px;
+}
+
+.bullet li:last-child::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--classic-red);
+  border-radius: 50px;
+  position: absolute;
+  top: 2px;
+  left: 22px;
+}
 
 /* ABOUT COMPANY */
 
@@ -1999,12 +2039,15 @@ a {
   padding-top: 0px;
 }
 
-.contacts>button {
+.contacts .lose_button {
   margin-top: 21px;
   margin-right: 0px;
   width: 300px;
   padding: 10px 0;
   margin-left: 1px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
 }
 
 .contacts>p {
@@ -2050,7 +2093,7 @@ a {
 }
 
 .map_popup iframe {
-  width:943px;
+  width: 943px;
   height: 449px;
 }
 
@@ -2092,10 +2135,21 @@ a {
 }
 
 @keyframes bounce {
-0% {transform: translateY(-2000px);}
-70% {transform: translateY(30px);}
-90% {transform: translateY(-10px);}
-100% {transform: translateY(0);}
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .popup_show {
@@ -2105,9 +2159,26 @@ a {
 }
 
 @keyframes shake {
-  0%, 100% {transform: translateX(0);}
-  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-  20%, 40%, 60%, 80% {transform: translateX(10px);}
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .popup_error {
@@ -2258,7 +2329,8 @@ a {
   background-color: var(--brick_red);
 }
 
-.lose_button:active {
+.lose_button:active,
+ .lose_button:focus{
   background-color: var(--dark-red);
 }
 
@@ -2434,7 +2506,7 @@ a {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  width: 140px;
+  min-width: 140px;
   padding: 0px;
   margin-left: 50px;
   padding-right: 5px;
@@ -2515,6 +2587,7 @@ a {
 .footer_menu {
   display: flex;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 
@@ -2570,6 +2643,7 @@ a {
 
 .footer_menu_yellow {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 23px;
   margin-top: 34px;
@@ -2606,6 +2680,10 @@ a {
 
 .footer_address+a {
   color: var(--basic-white);
+}
+
+.developed {
+  margin-left: 53px;
 }
 
 /* filter */

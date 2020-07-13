@@ -8,7 +8,7 @@
   const email = popup.querySelector('[name=email_field]')
 
 
-  const POPUP_SHOW = "popup_show"
+  const POPUP_SHOW = 'popup_show'
 
   if (popup) {
     open_popup.forEach(Element => {
